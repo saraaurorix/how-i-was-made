@@ -13,7 +13,7 @@ Lessons from the videos made after Out of Office, collected by stage. Where this
 **Per mouth shot:**
 1. **The still.** Face at least about 30% of the frame height (punch in and upscale small crops). Nothing in front of the mouth: remove microphones with a Grok image edit. Her eyes on the lens: OmniHuman returns to the still's gaze (in one shot she sang to her lap twice), and the still is also its fallback input. **Anyone else in frame has their mouth shut in the still itself** (a ChatGPT edit, "his mouth closed in a tight-lipped smile"): with that, neither Kling take of a two-person shot moved his mouth (measured 0.001); a prompt line alone had not stopped it.
 2. **A Kling singing take:** sound **ON**, the lyric quoted in the prompt, start frame = the lip still. Make 2 takes.
-3. **Fit it.** Slide the shot's vocal window along the take and correlate her mouth opening (face landmarks, face-cropped) with the vocal stem's loudness.
+3. **Fit it.** Slide the shot's vocal window along the take and correlate her mouth opening (face landmarks, face-cropped) with the vocal stem's loudness (`scripts/lipscore.py` gives the correlation and lag for one clip against one slice; the sliding fit itself is not shipped as a script).
    - On that measure: **PASS ≥ 0.40** (the OmniHuman takes kept by eye scored 0.36–0.72); **CHECK 0.25–0.40**: watch it with the sound; **FAIL < 0.25**: an OmniHuman candidate. A closed-mouth Kling clip scored 0.16.
    - Dense staccato lines score about 0 even when they look fine. **A smiling singer scores low too:** the measure reads teeth as an open mouth (one take scored 0.13 against the song and 0.02 against Kling's own soundtrack). A low score is a reason to look, not a verdict. The eye decides.
    - **Kling sings the right line at its own pace** (in one take every word was right, but about 14% slower and with a long pause mid-line), so one offset can't fit both phrases. The fix that needs no new generation is a word-anchored retime: play the take along straight lines between the take's own Whisper word times and the song's word times, frame-blended; then check frame by frame that the closed, round and open mouth shapes land on their words (within 1–2 frames on that take). Keep stretches at about 0.8–1.3×, pauses excepted.
@@ -40,14 +40,14 @@ Lessons from the videos made after Out of Office, collected by stage. Where this
 - **A 5 s Kling clip is 121 frames = 4.84 s at 25 fps:** plan no shot over 4.7 s on one clip.
 - **Kling pro returns 1916×1080** against standard's 1280×720, which saves the upscale pass.
 - **Flux 3 on fal** was run head to head with Kling on one video's first minute (25 clips). The director's verdict was that Kling is better. Kling stays the b-roll engine.
-- **Chaining:** a continuous scene is made in order, each clip from the frame the cut actually plays last in the one before (`shot-continuity/scripts/chain_frame.py`), never from the shot's still: in another video a shot made from the previous shot's still put Kevin in the aisle before he had moved. Window a chained shot at 0.04 s (0.042 skips frame 1 at 24 fps) and blend the seam over 3–6 frames (`shot-continuity/scripts/seam_blend.py`).
+- **Chaining:** a continuous scene is made in order, each clip from the frame the cut actually plays last in the one before (`../shot-continuity/scripts/chain_frame.py`), never from the shot's still: in another video a shot made from the previous shot's still put Kevin in the aisle before he had moved. Window a chained shot at 0.04 s (0.042 skips frame 1 at 24 fps) and blend the seam over 3–6 frames (`../shot-continuity/scripts/seam_blend.py`).
 
 ---
 
 ## §3 Stills: routes, refusals and wording
 
 **Route, in order** (the director made the first one a standing rule):
-1. **ChatGPT images through the Codex CLI:** about 90 s a still, 3 in parallel, 1672×941 (16:9). Edits of an existing picture go the same way.
+1. **ChatGPT images through the Codex CLI:** about 90 s a still, 3 in parallel, 1672×941 (16:9). Edits of an existing picture go the same way. The runner is `out-of-office/tools/more/gpt_edit.py` in the repo.
 2. **When it refuses a look:** rewrite the row (the wording below) rather than fight the filter, and keep a more covered variant of each costume ready.
 3. **Nano Banana Pro 2K** is the other stills route; where it is paid, only on a yes, every time. **Grok image edit** for small edits: microphone removal, a stamp printed on a costume. Grok's CLI outputs about 1280×720 and full-frame edits move things (in one still Sara was redrawn taller and Kevin moved), so crop the edit and composite it back. Tell it the size and placement ("the size of a hand, printed into the fabric, not a sticker"), and check skin for stray red marks.
 
@@ -78,10 +78,10 @@ Lessons from the videos made after Out of Office, collected by stage. Where this
 
 | Check | What it catches | How |
 |---|---|---|
-| **Intent screen** | a clip that joins fine but doesn't do what its row says (a gag that never happens, an object that contradicts the joke) | `shot-continuity/scripts/clip_screen.py --judge --workers 3` (add `--lips` for sung shots) |
-| **End-to-end read** | a film whose shots and joins all pass but tell no story | `shot-continuity/scripts/story_sheets.py`, the state ledger, `shot-continuity/scripts/join_judge.py`, written up as an end-to-end read that goes with the cut (shot-continuity Part 3c) |
+| **Intent screen** | a clip that joins fine but doesn't do what its row says (a gag that never happens, an object that contradicts the joke) | `../shot-continuity/scripts/clip_screen.py --judge --workers 3` (add `--lips` for sung shots) |
+| **End-to-end read** | a film whose shots and joins all pass but tell no story | `../shot-continuity/scripts/story_sheets.py`, the state ledger, `../shot-continuity/scripts/join_judge.py`, written up as an end-to-end read that goes with the cut (shot-continuity Part 3c) |
 | **In motion, every shot** | hands rising mid-shot, a backwards slide: invisible in three frames | a strip per shot with a frame every 0.25 s; 0.1 s steps where anything moves oddly |
-| **Freeze + look** | placeholder stills, clips that barely move, CGI/cartoon looks, melted faces, ugly expressions | optical-flow residual after a global zoom/pan fit (placeholders 0.013–0.038, the stillest real clip 0.064, threshold 0.05), plus ChatGPT asked relative to an approved frame (asked absolutely, it calls every AI frame "CGI") |
+| **Freeze + look** | placeholder stills, clips that barely move, CGI/cartoon looks, melted faces, ugly expressions | optical-flow residual after a global zoom/pan fit (placeholders 0.013–0.038, the stillest real clip 0.064, threshold 0.05; no script shipped), plus ChatGPT asked relative to an approved frame (asked absolutely, it calls every AI frame "CGI") |
 | **Placeholder label** | an unanimated still sent as if finished | the editor burns a red "STILL <id> - NOT ANIMATED YET" bar and warns. It also caught a chained shot whose window ran 4 frames past its clip |
 | **Pace** | a dance that is too fast and looks odd, which strips can't show | measure the pace against approved clips (chained shots are their own class) |
 | **Beat fit** | dancing or strumming off the beat | fit the dance steps or the guitar strokes to the beats |
@@ -89,7 +89,7 @@ Lessons from the videos made after Out of Office, collected by stage. Where this
 | **Mouths on non-lip shots** | Sara (or anyone) mouthing where nobody sings | scan the b-roll for mouth movement |
 | **World-change ledger** | a character who leaves through one portal and, in the same scene, another | a ledger of every world change |
 | **First frame = the new still** | a stale start frame sent to Kling | compare the clip's frame 0 with the still (mean abs diff < about 12, or brightness) |
-| **The gate** | frame counts, drift, strict decode, colour, audio offset, same-source neighbours | one gate script run on the work-in-progress cut |
+| **The gate** | frame counts, drift, strict decode, colour, audio offset, same-source neighbours | one gate script run on the work-in-progress cut (the checks are listed in `qa-gates.md` §6; no script shipped) |
 | **A 10-clip pilot** | systematic prompt faults before the full run | one clip per set and look, plus a text gag (on one video it caught two faults) |
 
 **How to read the checks:**
@@ -102,7 +102,7 @@ Lessons from the videos made after Out of Office, collected by stage. Where this
 
 ## §5 Kling prompts: habits to write around
 
-The wording that works and what fails without it (walkers, chairs, crowds, group dances, end frames, guitar, dance, editing notes, actions that must land, mirrors, security cameras) is the wording library in `storyboard-spec.md` §4, because it is decided when the row is written. The shot-continuity skill's Part 2, "Kling habits", has the continuity reasons.
+The wording that works and what fails without it (walkers, chairs, crowds, group dances, end frames, guitar, dance, editing notes, actions that must land, mirrors, security cameras) is the wording library in `wrapper.md` §3, because it is decided when the row is written. The shot-continuity skill's Part 2, "Kling habits", has the continuity reasons.
 
 ---
 

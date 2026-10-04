@@ -8,8 +8,7 @@ import sys
 
 from PIL import Image, ImageDraw
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-import fonts  # noqa: E402  Windows font names -> the closest face on this machine
+import fonts  # Windows font names -> the closest face on this machine (fonts.py sits beside this script)
 
 src, out_prefix = sys.argv[1], sys.argv[2]
 ids = sys.argv[3].split(",") if len(sys.argv) > 3 else None

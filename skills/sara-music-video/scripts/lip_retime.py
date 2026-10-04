@@ -1,6 +1,6 @@
 """Frame-level lip re-timing (free): warp an existing lip-sync clip so its mouth openings land on the sung words and the
 mouth rests in the silences. Dynamic time warping between the clip's lip-opening curve and the word-masked vocal envelope;
-each output frame picks a source frame (play on, hold, or skip one), within +-0.8 s.
+the warp stays between 0.75x and 1.25x and output frames are blended, never held or skipped, within +-0.8 s.
 Writes gen/lipsync_v2v/<id>.mp4 covering exactly the shot window (the editor prefers it, with no extra offset).
 
 Usage: python tools/lip_retime.py ID [source_clip]

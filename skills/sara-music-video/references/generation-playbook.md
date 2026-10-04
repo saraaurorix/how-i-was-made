@@ -70,13 +70,13 @@ python scripts/align_lines.py                                      # lyric lines
 
 ## §2 Storyboarding for generation
 
-**The board's rules live in one place, `storyboard-spec.md`.** It holds the fields every shot row needs, how to judge each section's form against the song, how to direct a continuous scene, the writing order, the board gate with `scripts/board_lint.py`, the wording library (§4), and the rules that used to be here (§4b: usable seconds of a clip, a location per montage shot, onboard cameras, chanted lines, text beats, silhouettes, logic gags, closed-mouth tails). Mouth-shot framing is in its step 9 and in §5 below.
+**The board's rules live in one place, `storyboard-spec.md`.** It holds the fields every shot row needs, how to judge each section's form against the song, how to direct a continuous scene, the writing order, the board gate with `scripts/board_lint.py`, the wording library (now `wrapper.md` §3), and the rules that used to be here (§4b: usable seconds of a clip, a location per montage shot, onboard cameras, chanted lines, text beats, silhouettes, logic gags, closed-mouth tails). Mouth-shot framing is in its step 9 and in §5 below.
 
 ## §3 Stills (ChatGPT via Codex first; Nano Banana Pro and Grok as fallbacks)
 
 *Newer lessons (filters, refusals, reference traps, Grok compositing): `field-lessons.md` §3.*
 
-**Route: ChatGPT image generation through the Codex CLI** (the director made it the standing rule for stills). About 90 s a still, 3 in parallel, 16:9 at 1672×941, face refs attached. **Fallback, for a still ChatGPT won't make:** Nano Banana Pro at 2K (`scripts/gen.py jobs.json 4`), paid and **asked for every time**. Start the Kling clips as soon as the first stills land.
+**Route: ChatGPT image generation through the Codex CLI** (the director made it the standing rule for stills; the runner is `out-of-office/tools/more/gpt_edit.py` in the repo). About 90 s a still, 3 in parallel, 16:9 at 1672×941, face refs attached. **Fallback, for a still ChatGPT won't make:** Nano Banana Pro at 2K (`scripts/gen.py jobs.json 4`), paid and **asked for every time**. Start the Kling clips as soon as the first stills land.
 
 **References per character.**
 - **Sara:** a face ref plus a portrait (face only, for new outfits), plus the outfit ref for the act from your artist's wardrobe references.
@@ -160,7 +160,7 @@ python scripts/align_lines.py                                      # lyric lines
 
 ## §5 Lip-sync
 
-**Casting first (§1). Framing (§2): head-and-shoulders, face ≥ 1/3, props clear of the mouth box.**
+**Casting first (§1). Framing (`storyboard-spec.md`, step 9): head-and-shoulders, face ≥ 1/3, props clear of the mouth box.**
 
 **THE DEFAULT: a Kling singing take IS the lip shot.** The director's rule: lip-sync is for where Kling fails, not for every mouth shot; sometimes Kling works. Sound ON, the lyric quoted in the prompt, start frame = the lip still, 2 takes; fit each take against the vocal (the measure in `field-lessons.md` §1: PASS ≥ 0.40, CHECK 0.25–0.40, FAIL < 0.25) and judge by eye. **OmniHuman, below, is the fix for the takes that fail,** after the director has seen the still at full size with the cost quoted. Never plan a video's lip shots as an OmniHuman batch. Details: `field-lessons.md` §1.
 

@@ -1,13 +1,14 @@
 # Tool map: every script, where it lives, and when to reach for it
 
-**The continuity scripts** (`join_check.py`, `clip_screen.py`, `story_sheets.py`, `join_judge.py` and the chaining kit: `chain_frame.py`, `seam_blend.py`, `framecheck.py` and `regioncheck.py`, on `chainlib.py`) are in `shot-continuity/scripts/`. Copy a tool into your video's `tools/` folder and point it at that video's storyboard and stems; most read a hard-coded storyboard name.
+**The continuity scripts** (`join_check.py`, `clip_screen.py`, `story_sheets.py`, `join_judge.py` and the chaining kit: `chain_frame.py`, `seam_blend.py`, `framecheck.py` and `regioncheck.py`, on `chainlib.py`) are in `../shot-continuity/scripts/`. Copy a tool into your video's `tools/` folder and point it at that video's storyboard and stems (`--sb` names another board).
 
 **`scripts/board_lint.py`** is the board gate's mechanical check (`storyboard-spec.md` §3): stdlib only. It reads older boards through field aliases; a board written in the spec's field names gets every check.
 
 **The skill's `scripts/`:**
 - **The base** is the pipeline the later videos were built on, with their QA tools and casting helpers.
 - **Encoding and fonts:** the scripts were written on a Mac and encode on the GPU (Apple VideoToolbox) at low priority. `scripts/venc.py` gives the ffmpeg arguments for the machine's own GPU encoder where there is one, and x264 otherwise. Fonts go through `scripts/fonts.py`. `scripts/fal_env.py` reads `FAL_KEY` from the environment or a login shell.
-- **Setup:** copy what you need into your video's `tools/` folder, together with the helpers a script imports (`fonts.py`, `venc.py`). The scripts assume the project root is `tools/..`. Run each script once on a real shot before relying on it.
+- **Setup:** copy the whole `scripts/` folder into your video as `tools/` (several scripts import `lipscore.py`, `fonts.py`, `venc.py` or `fal_env.py` and need `models/` beside them). The scripts assume the project root is `tools/..`, with `storyboard.json`, `words.json`, `gen/stills/`, `gen/clips/`, the song, and the stems under `sep_wav/htdemucs/<name>/`. Run each script once on a real shot before relying on it.
+- **Needs:** Python 3.10–3.12 and the repo's `requirements.txt` (it pins `mediapipe<1.0` and `av<19`); the Higgsfield command-line tool for `gen.py`; a fal.ai key for `falgen.py`; Demucs for the stems. Out of Office's own board predates the spec's field names (no `type`, `voice`, `look`, `set`), so the lip and casting scripts stop on it; `out-of-office/tools/build_jobs.py` and `edit.py` read that older format, not the spec's.
 - **Worked example:** `out-of-office/tools/build_jobs.py`, `out-of-office/tools/edit.py` and `out-of-office/tools/captions.py` contain Out of Office's per-shot content. Replace the dicts; keep the machinery.
 
 ## Scripts by stage
@@ -26,7 +27,7 @@ In this skill's `scripts/` unless the path says otherwise.
 | Storyboard | `cut_audit.py` | phrase-safe cuts: flags lip shots that cut mid-word or mid-phrase | |
 | Stills | `contact.py` | contact sheet | |
 | | `outfit_audit.py` | one row per look, anchor still first; `--clips` adds each clip's last frame | the outfit-drift gate after every stills round and before the animatic |
-| Video | `gen.py` | Higgsfield CLI runner (paid; 4 concurrent; resumes) | |
+| Video | `gen.py` | Higgsfield CLI runner (paid; 4 concurrent; resumes; the same file as `../shot-continuity/scripts/gen.py`: upload cache keyed on content, `end` frame key) | |
 | | `falgen.py` + `fal_env.py` | fal runner (paid; resumes; upload cache keyed on path + mtime) | |
 | QA (clips) | `clipsheet.py` | start/mid/end frames of the used window | |
 | | `carflow.py` | signed sideways flow of a region | |

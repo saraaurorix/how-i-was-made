@@ -13,7 +13,7 @@ This repo is the production as it was used, with these changes. Nothing else was
 - Comments that quoted the director or named another video.
 
 ## Changed so the scripts run on your machine
-- **Fonts.** The scripts ask for Windows fonts by file name. `fonts.py` (added) finds the closest face on a Mac or on Linux, or falls back to a built-in font. Out of Office's `captions.py`, `edit.py` and `contact.py` now go through it.
+- **Fonts.** The scripts ask for Windows fonts by file name. `fonts.py` (added, in `tools/more/` and in each skill's `scripts/`) finds the closest face on a Mac or on Linux, or falls back to a built-in font. Out of Office's `captions.py`, `edit.py` and `contact.py` now go through it.
 - **Video encoder.** The skills' scripts encoded with Apple VideoToolbox only. `venc.py` (added) picks the machine's GPU encoder and falls back to x264.
 - **Folders.** Out of Office's helper scripts were sorted into `tools/` (the five the film names), `tools/more/` and `tools/fixes/`; the moved ones had their folder paths corrected.
 - **The two prompt files** were rewritten by `build_jobs.py` so that a rebuild is byte-identical. The content is unchanged.

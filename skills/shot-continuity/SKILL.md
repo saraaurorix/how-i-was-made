@@ -16,11 +16,13 @@ description: Plan, make and check continuity between shots in AI-generated video
 
 The director's two asks: avoid it happening in the first place, and have a skill that looks at the joins between shots for continuity issues across the whole video.
 
+**Who is who.** Sara is the AI pop star these videos are about; Kevin is the human office worker opposite her; the director is the human who makes the calls. The automatic face tests (SIDES, `face_sheet.py --who`, TRAVEL) are tuned to those two faces: for your own cast, edit the finders at the end of `faces()` in `scripts/join_check.py`, or rely on the eye checklist. Both skills are published at github.com/saraaurorix/how-i-was-made; the `out-of-office/` paths below mean that repo's folder.
+
 ## Part 1. Plan it: the storyboard rules
 
-*In the `sara-music-video` skill, `sara-music-video/references/storyboard-spec.md` is the toolbox for scenes that must connect: each section's form judged against the song (montage, home set, continuous, performance, or a mix), directing a continuous scene like a film (a reused set, a floor plan, blocking, named camera setups, a coverage plan), the optional `sara-music-video/scripts/board_lint.py`, and the map of where each past problem should have been caught. A montage needs only the prompt wrapper (`sara-music-video/references/wrapper.md`). The rules below are the continuity reasons behind those fields.*
+*In the `sara-music-video` skill (install it alongside this one), `../sara-music-video/references/storyboard-spec.md` is the toolbox for scenes that must connect: each section's form judged against the song (montage, home set, continuous, performance, or a mix), directing a continuous scene like a film (a reused set, a floor plan, blocking, named camera setups, a coverage plan), the optional `../sara-music-video/scripts/board_lint.py`, and the map of where each past problem should have been caught. A montage needs only the prompt wrapper (`../sara-music-video/references/wrapper.md`). The rules below are the continuity reasons behind those fields.*
 
-**1. Scenes, not shots.** Group shots into scenes: one place, one stretch of time. Every scene gets a **staging line** under its heading. The builder appends it to every still and clip prompt in the scene.
+**1. Scenes, not shots.** Group shots into scenes: one place, one stretch of time. Every scene gets a **staging line** under its heading. The builder (the script that turns board rows into prompts, like Out of Office's `tools/build_jobs.py`) appends it to every still and clip prompt in the scene.
 - **Geography,** in one sentence: where the fixed things are (the desk, the doors, the aisle).
 - **The camera side:** which side of the action the camera stays on. This is the 180-degree line.
 - **Who is where:** who is screen-left and who is screen-right.
@@ -110,7 +112,7 @@ Example: *Staging: the office floor's central aisle runs from the big desk (near
 **Chain from the real frame, never from A's still.** On another video's intro, shot B was first made from shot A's still, so Kevin was already in the aisle before he had moved: a teleport. Made again from A's actual cut frame, it joined.
 
 **A's cut frame is the last frame of A that the cut actually plays,** not the clip's final frame.
-- **Its index** is `round(window × clip_fps) + nf − 1`, where `nf` is the shot's frame count in the cut. This assumes an editor that plays every source frame once from the window, with no slow-down.
+- **Its index** is `round(window × clip_fps) + nf − 1`, where `nf` is the shot's frame count in the cut. This assumes an editor at 25 fps that plays every source frame once from the window (a start offset per shot), with no slow-down; the chaining scripts take `--window` for those offsets.
 - **`scripts/chain_frame.py`** saves that frame.
 - **Window the chained shot B at 0.04 s,** not 0.042: at 24 fps the seek would skip frame 1.
 - **So fix A's window first, then take the frame.**
@@ -182,7 +184,7 @@ Example: *Staging: the office floor's central aisle runs from the big desk (near
 1. **After the stills:** before any video spend.
 2. **After every cut:** as part of the cut review. The cut is what the viewer sees, captions included.
 
-**The join check.** Run it from the video's project folder (`scripts/` below is this skill's folder), in a Python environment with cv2, mediapipe, imageio-ffmpeg, Pillow and numpy.
+**The join check.** Run it from the video's project folder. The scripts live in this skill's folder: call them by full path (`python ~/.claude/skills/shot-continuity/scripts/join_check.py …`) or copy the whole `scripts/` folder into the project as `tools/` (each script finds its helpers and the face model beside itself). Python 3.10–3.12 with the repo's `requirements.txt` (cv2, mediapipe below 1.0, imageio-ffmpeg, Pillow, numpy).
 ```bash
 python scripts/join_check.py --cut CUT.mp4 --montage-sets rap,epilogue
 ```
@@ -256,12 +258,12 @@ Both were in the frame strips I read, but I read strips for faces, outfits and s
 python scripts/clip_screen.py --judge --workers 3
 ```
 - **Options:** `--only ID,ID`, `--lips` (lip shots too), `--clip FILE --only ID` (a take that isn't installed yet), `--out DIR` (the default is `review/screen`).
-- **What it screens:** 8 frames from the seconds the cut actually plays. The editor's `WINDOW`, `CLIPEND` and slow-down are read from the edit script given with `--editor`, if it defines them.
+- **What it screens:** 8 frames from the seconds the cut actually plays. The editor's `WINDOW`, `CLIPEND` and slow-down are read from the edit script given with `--editor`, if it defines them (a plain Python file with those dicts is enough; without one, every shot is screened from 0.15 s in).
 - **What it writes:** `review/screen/<id>.jpg` (the frames, with the lyric, PICTURE, ACTION and STAGING printed above), `SCREEN.md` (worst first) and `screen.json`.
 - **Automatic flags:**
   - **TRAVEL:** Sara's face moves across or toward the frame when the row has no travel word.
   - **SLIDE:** a big part of the picture slides one way while the camera should hold.
-- **The judge** (`--judge`): ChatGPT through the Codex CLI, read-only, about 15–20 s a clip. The prompt carries the row's full text (lyric, PICTURE, ACTION, STAGING), not just the strip's header, which cuts long rows off. It also carries EARLIER, the scene's previous two shots, so things carried over from them don't count as new. It answers fixed questions:
+- **The judge** (`--judge`): ChatGPT through the Codex command-line tool (installed and signed in; any command-line tool that can look at an image and answer in text can be swapped in), read-only, about 15–20 s a clip. The prompt carries the row's full text (lyric, PICTURE, ACTION, STAGING), not just the strip's header, which cuts long rows off. It also carries EARLIER, the scene's previous two shots, so things carried over from them don't count as new. It answers fixed questions:
   - does the ACTION happen, and from which frame;
   - what APPEARS that the row, staging and earlier shots don't explain;
   - what MOVES WRONG: props sliding by themselves, crowds sliding like flat pictures while the camera holds, vehicles backwards, characters wandering off;
@@ -375,9 +377,10 @@ python scripts/clip_screen.py --judge --workers 3
   - `scripts/join_judge.py`: the vision judge on every cut (Part 3c): place, action, costume and props across A and B, with a confirm pass.
   - `scripts/chainlib.py`, `scripts/chain_frame.py`, `scripts/seam_blend.py`: the chaining kit (parametrised with `--sb`, `--clips` and `--window`).
   - `scripts/framecheck.py` and `scripts/regioncheck.py`: every Nth frame of a clip's used seconds, and one region at full size.
-  - `scripts/gen.py`: Higgsfield jobs with the `end` key and the content-hash upload cache.
+  - `scripts/gen.py`: Higgsfield jobs with the `end` key and the content-hash upload cache (it writes its cache, `uploads.json`, beside itself).
+  - `scripts/fonts.py` and `scripts/venc.py`: fonts on any machine; the machine's GPU encoder, x264 otherwise.
 - **References** (`references/`):
   - `references/generation-flow.md`: the order of work and post-processing, agreed with the director.
   - `references/worked-example.md`: one stretch of a later video's first cut examined, the full join review in numbers, and the scene restaged under these rules.
   - `references/intent-screen-calibration.md`: how the intent screen's judge was tuned and measured, and how to measure it again.
-  - `references/project-pack.md`: the `project_pack.json` every video keeps, with everything stored and mapped to the project so it can be used as content (a website, a making-of). The join sheets, character sheets and repair lists go in its `qa` block; the review boards count as content too.
+  - `references/project-pack.md`: optional: the `project_pack.json` a video can keep (no script for it is shipped), with everything stored and mapped to the project so it can be used as content (a website, a making-of). The join sheets, character sheets and repair lists go in its `qa` block; the review boards count as content too.

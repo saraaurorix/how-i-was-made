@@ -46,8 +46,7 @@ Steps 5 and 6 cost money on Higgsfield. Everything else runs on your machine.
 
 ## The rest of `tools/`
 
-- `tools/fonts.py`: the scripts ask for Windows fonts by file name; this finds the closest face on your machine. Put your own `.ttf` files in `tools/fonts/` to choose them.
-- `tools/more/`: `analyze.py` (beat grid), `contact.py` (contact sheets of a folder of stills), `falgen.py` with `fal_env.py` (runs the lip-sync jobs on fal.ai), `gpt_edit.py` (stills through ChatGPT images, by way of the Codex command-line tool), and `reels.py` and `shorts.py`, which cut the vertical versions of the finished film.
+- `tools/more/`: `fonts.py` (the scripts ask for Windows fonts by file name; this finds the closest face on your machine; put your own `.ttf` files in `tools/more/fonts/` to choose them), `analyze.py` (beat grid), `contact.py` (contact sheets of a folder of stills), `falgen.py` with `fal_env.py` (runs the lip-sync jobs on fal.ai), `gpt_edit.py` (stills through ChatGPT images, by way of the Codex command-line tool), and `reels.py` and `shorts.py`, which cut the vertical versions of the finished film.
 - `tools/fixes/`: one script per shot that was repaired after the first cut (the stamp that read BOLVED, the queue sign, the sky ticker, the street signs, the empty pods). They work on frames of the finished film, which is not in this repo. They are here to be read, not run: each one's docstring says what was wrong and how it was fixed.
 
 `reels.py` and `shorts.py` also need the finished film and its stems, so treat them the same way.

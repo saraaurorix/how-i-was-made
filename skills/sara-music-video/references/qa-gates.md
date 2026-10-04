@@ -42,7 +42,7 @@ Every item once cost a paid redo or a review round. Run a gate's list before mov
 - [ ] **Logic:** watch the *used* window for breaks (a head floating after a hatch shuts, a car changing).
 - [ ] **Fixes go into your `edit.py` dicts first** (`WINDOW`, `REVERSE`, `BAND_REVERSE`, `OVERRIDE`; generation-playbook §8). Re-roll only when a free fix can't work.
 - [ ] **Frame 0 matches the new still** (mean abs diff under about 12): a stale upload wasted paid clips twice.
-- [ ] **The intent screen:** `shot-continuity/scripts/clip_screen.py --judge --workers 3` on every batch (`--lips` for sung shots). Read every FAIL's strip by eye.
+- [ ] **The intent screen:** `../shot-continuity/scripts/clip_screen.py --judge --workers 3` on every batch (`--lips` for sung shots). Read every FAIL's strip by eye.
 - [ ] **In motion:** a 0.25 s strip of every clip; 0.1 s steps where anything moves oddly. A wrong-direction flag is a failure unless you can show it in motion.
 - [ ] **Pace and beat** on performance clips (`field-lessons.md` §4).
 
@@ -69,7 +69,7 @@ Render the cut first. The checks below use the editor's own outputs: one segment
 - [ ] **Evidence prepared:** a contact or before/after sheet under 30 MB. The message lists what changed, what to watch and at which m:ss, and what the round cost.
 - [ ] **No unlabelled placeholder:** every still standing in for a clip carries a burned-in "STILL <id> - NOT ANIMATED YET" bar, and the message lists them.
 - [ ] **Freeze and look** (`field-lessons.md` §4): no frozen shots, nothing CGI-looking against an approved frame, no melted faces or ugly expressions. Earlier "approved" minutes aren't exempt.
-- [ ] **The end-to-end story pass** (shot-continuity Part 3c): `shot-continuity/scripts/story_sheets.py` read in order with the state ledger, every shot in motion, `shot-continuity/scripts/join_judge.py` on every cut, merged into `review/E2E_cutN.md` and sent with the cut.
+- [ ] **The end-to-end story pass** (shot-continuity Part 3c): `../shot-continuity/scripts/story_sheets.py` read in order with the state ledger, every shot in motion, `../shot-continuity/scripts/join_judge.py` on every cut, merged into `review/E2E_cutN.md` and sent with the cut.
 
 ## §7 Deliverables gate
 - [ ] **Full master:** 1080p30 H.264 High, AAC 256k, faststart.

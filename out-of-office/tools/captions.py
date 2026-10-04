@@ -12,7 +12,7 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "more"))
 import fonts  # noqa: E402  the font names below are Windows files; fonts.py finds the closest face on this machine
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")

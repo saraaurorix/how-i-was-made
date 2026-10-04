@@ -66,7 +66,7 @@ Three things in the skills are Sara's and need swapping for your own artist: the
 | Lip-sync | a [fal.ai](https://fal.ai) key in the environment as `FAL_KEY`; `falgen.py` drives it | per second |
 | Word times, beat grid, the edit, every check | nothing: they run on your machine | free |
 
-The scripts were written on Windows and then a Mac. `fonts.py` finds the closest fonts on your machine, and the skills' `venc.py` picks your GPU's video encoder, falling back to x264. Out of Office's five scripts should run anywhere Python does; the skills' scripts use `nice` and are macOS and Linux only as written.
+The scripts were written on Windows and then a Mac. `fonts.py` (in `tools/more/` and in each skill's `scripts/`) finds the closest fonts on your machine, and the skills' `venc.py` picks your GPU's video encoder, falling back to x264. Out of Office's five scripts should run anywhere Python does; the skills' scripts use `nice` and are macOS and Linux only as written.
 
 Some of the lip-sync checks need the vocal on its own. That is Demucs: `pip install demucs`, then `python -m demucs --two-stems vocals -o sep song.mp3`. It is not in `requirements.txt` because it brings PyTorch with it.
 

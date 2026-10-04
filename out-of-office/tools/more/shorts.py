@@ -21,7 +21,7 @@ import numpy as np
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, ".."))  # tools/: captions.py, fonts.py
+sys.path.insert(0, os.path.join(HERE, ".."))  # tools/: captions.py (fonts.py sits beside this script)
 sys.path.insert(0, os.path.join(HERE, "..", "fixes"))  # reelfix_s44.py, sr_install.py
 import captions  # noqa: E402
 import fonts  # noqa: E402

@@ -5,7 +5,7 @@ description: Make an AI music video from a song to a finished cut, the way the S
 
 # Sara Aurorix music videos (public edition)
 
-This is the skill behind the music videos of Sara Aurorix, an openly AI pop star whose films are written and directed by one human and built with Claude Code. It is published as it is used, minus the private parts. The first video made this way, **Out of Office** (74 shots), is the benchmark throughout; its storyboard, prompts and scripts are in this repo's `out-of-office/` folder, so every rule here can be checked against a real file.
+This is the skill behind the music videos of Sara Aurorix, an openly AI pop star whose films are written and directed by one human and built with Claude Code. Kevin is the human office worker who plays opposite her in those videos. The skill is published as it is used, minus the private parts, in the repo github.com/saraaurorix/how-i-was-made, together with the `shot-continuity` skill (install both). The first video made this way, **Out of Office** (74 shots), is the benchmark throughout; its storyboard, prompts and scripts are in that repo's `out-of-office/` folder (paths written `out-of-office/…` below mean that folder), so every rule here can be checked against a real file. Its board predates the field names in `references/storyboard-spec.md`: it has no `type`, `voice`, `look` or `set`, so the scripts that need those stop on it.
 
 **Using it for your own artist.** Three things are Sara's and need swapping for yours: the **identity line** (the one sentence about her face, `references/wrapper.md` §1), the **reference pictures** (one portrait, one full-length picture per look, one per recurring character), and the **house rules on taste** (non-negotiable 4). Everything else is method. The human who makes the calls is called "the director" below: that is you.
 
@@ -38,16 +38,16 @@ This is the skill behind the music videos of Sara Aurorix, an openly AI pop star
 The order Out of Office ran, with the additions that earned their place. Each line names where the detail lives.
 
 1. **Concept and spine** → the director picks (`references/creative-playbook.md` §1–2).
-2. **Lyrics** as line → picture; the listen test, no in-jokes; locked before the song is generated (§3).
-3. **The song** (Suno), two takes, on the director's go; they pick by ear (§4).
-4. **Casting check** by ear: who sings each line, as sung (`references/generation-playbook.md` §1; `scripts/align_lines.py`, `casting_scan.py`, `casting_clip.py`).
+2. **Lyrics** as line → picture; the listen test, no in-jokes; locked before the song is generated (`references/creative-playbook.md` §3).
+3. **The song** (Suno), two takes, on the director's go; they pick by ear (`references/creative-playbook.md` §4).
+4. **Casting check** by ear, when the song has more than one voice: who sings each line, as sung (`references/generation-playbook.md` §1; `scripts/align_lines.py`, `casting_scan.py`, `casting_clip.py`). On a first song there is no earlier song to take reference lines from: mark lines of this song you are sure of.
 5. **Analysis:** beats, stems, word times (`scripts/analyze.py`, `transcribe.py`).
 6. **The board:** the section forms judged against the song; the wrapper written; one look per act; a set list only as long as the sets that recur; continuous scenes directed; every row a picture, an action, who sings, the join. Count it against Out of Office. Read it with the song. The director signs it off. (`references/storyboard-spec.md`; `scripts/board_lint.py` if you want a list of things to look at.)
 7. **Pilot stills** (a handful across looks and sets) → the director's eye → the rest. Inside a continuous scene, in sequence from the previous frame (`references/field-lessons.md` §3).
 8. **The animatic** (stills cut to the song) → the director's notes before any clip.
 9. **Pilot clips** (about 10: one per set and look, plus a text gag) → then the rest; continuous scenes chained in order (`references/field-lessons.md` §2).
 10. **Mouth shots:** a Kling singing take with audio on → keep the take for reference → the master soundtrack in the edit → check the same lyric passage in motion with sound. A lip-sync model only for the fails, and only after the director has seen the still and the quote (`references/field-lessons.md` §1).
-11. **The edit**, written as code from the storyboard and the word times; speed changes by blending only (`references/generation-playbook.md` §8; the Out of Office editor is `out-of-office/tools/edit.py` and `captions.py`).
+11. **The edit**, written as code from the storyboard and the word times; speed changes by blending only (`references/generation-playbook.md` §8). The skill ships no editor: start from Out of Office's (`out-of-office/tools/edit.py` and `captions.py` in the repo) or write your own from §8. Edit at 25 fps; Out of Office was cut at 30, which is why the playbook's frame arithmetic says 30 in places.
 12. **The read before sending:** in order, in motion, each shot against its row, the look, the joins, the placeholders (the shot-continuity skill, Part 3c).
 13. **Send** with what changed, where to look (m:ss), and the round's cost.
 14. **Notes** → principle 9 → re-render only those shots → step 12 again.
@@ -60,7 +60,7 @@ Find the shot from the time (relative to the file they watched); strip the cut a
 | The director says | Likely cause | Fix, cheapest first | Tool |
 |---|---|---|---|
 | "no continuity" / "it's disjointed" / "he's outside, he's inside" / "going in circles" / "people are gigantic" | a board problem: the story, staging, a state, the form | principle 9: back to the board; restage the section; then remake | shot-continuity Parts 3c–3d, `references/storyboard-spec.md` §1c |
-| "lip-sync is a bit off" | the mouth trails or leads; or a Kling take sings the line at its own pace, so no single offset fits | measure the lag, then nudge by whole frames; for a Kling take, retime it word by word and check the mouth shapes land on their words. A low sync score on a smiling singer is a reason to look, not a verdict | `scripts/lip_lag.py`, `scripts/lip_retime.py` |
+| "lip-sync is a bit off" | the mouth trails or leads; or a Kling take sings the line at its own pace, so no single offset fits | measure the lag, then nudge by whole frames; a smooth re-time where the pace is close (`scripts/lip_retime.py`, for the Wan route); for a Kling take, a word-anchored retime as described in `references/field-lessons.md` §1 (no script shipped), then check the mouth shapes land on their words. A low sync score on a smiling singer is a reason to look, not a verdict | `scripts/lip_lag.py`, `scripts/lip_retime.py` |
 | "starts good, then drifts" / "she sings longer than the audio" | the shot runs past her notes; a mask muted held notes | end the shot on the sung notes → a new Kling take → a lip-sync model on a yes | `scripts/cut_audit.py`, `scripts/lipsync_audit.py` |
 | "the guy is singing too" | the lip model moved every mouth | close his mouth in the still itself (an image edit), then the take; a prompt line alone didn't stop it | a new take |
 | "she's miming his line" | the song generator gave it to the other voice | re-cast: a closed-mouth gag, a shot of the other singer, or split the row | the board |
@@ -83,4 +83,5 @@ Find the shot from the time (relative to the file they watched); strip the cut a
 - `references/generation-playbook.md`: every known failure by asset type; `references/creative-playbook.md`: ideation, the spine, lyrics, the song, pacing, captions; `references/qa-gates.md`: checklists; `references/tool-map.md`: which script does what.
 - `scripts/`: the helpers. They are written to be copied into a project's `tools/` folder and run from the project folder (`python tools/board_lint.py storyboard.json`). `scripts/fonts.py` and `scripts/venc.py` make them run on a Mac, Windows or Linux.
 - The worked example: this repo's `out-of-office/` folder (the storyboard, every prompt, the five scripts that made the film).
-- The continuity tools (`join_check.py`, `clip_screen.py`, `story_sheets.py`, `join_judge.py`, the chaining kit) are in the `shot-continuity` skill.
+- The continuity tools (`join_check.py`, `clip_screen.py`, `story_sheets.py`, `join_judge.py`, the chaining kit) are in the `shot-continuity` skill: install it alongside this one (`../shot-continuity/scripts/` once both are in `~/.claude/skills/`).
+- **What the scripts need:** Python 3.10–3.12 and the repo's `requirements.txt` (it pins `mediapipe<1.0` and `av<19`); the Higgsfield command-line tool for `scripts/gen.py`; a fal.ai key for `scripts/falgen.py`; the Codex command-line tool for the vision judges in `shot-continuity`; Demucs for the vocal stems. A project is a folder with `storyboard.json`, `words.json`, `gen/stills/`, `gen/clips/`, the song, the stems under `sep_wav/htdemucs/<name>/`, and the scripts copied into `tools/` (copy the whole `scripts/` folder: several scripts import `lipscore.py`, `fonts.py`, `venc.py` or `fal_env.py` and need `models/` beside them).

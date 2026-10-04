@@ -113,7 +113,7 @@ Tag Sara's spoken lines as female explicitly, leave a bar of music after any mal
 | mean shot | 3.2 s | 2.6 s | 2.9 s | 2.5 s | 3.0 s |
 | lip-sync shots | 14 | 27 | 19 | 16 | 16 |
 
-- **Target about 70–90 shots,** a mean of about 3 s, and about 15–20 lip-syncs. Cut on beats (`scripts/analyze.py`).
+- **Target about 70–90 shots,** a mean of about 3 s, and about 15–26 lip-syncs, each inside a gag. Cut on beats (`scripts/analyze.py`).
 - **Rhythm by section:**
   - intro: longer holds, 3–5 s, then the title drop on the beat drop;
   - verses: one shot per lyric line;
