@@ -4,6 +4,8 @@ The director's ask: all of this should be stored, mapped against the project, so
 
 Every video keeps **`project_pack.json`** in its folder, rewritten by a script after every round. The website build reads it to make the song page, the locations strip, the making-of and the easter-egg pages. Paths are relative to the video's folder.
 
+*The script that rewrites the pack and the website build that reads it are not in this repo. The format is here so you can write your own.*
+
 | Key | What |
 |---|---|
 | `single`, `version`, `folder`, `written`, `spine` | the video in one line |

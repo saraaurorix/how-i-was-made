@@ -5,7 +5,7 @@ about with no evident purpose: the row's gag never happened. In the other, the v
 characters that the joke needed to be absent. Strips had been read for faces, outfits and sides, never against the row's action.
 This screen reads every clip against its row.
 
-  python clip_screen.py [--sb storyboard.json] [--clips gen/clips] [--editor tools/cut.py] [--only ID,ID] [--lips]
+  python clip_screen.py [--sb storyboard.json] [--clips gen/clips] [--editor tools/edit.py] [--only ID,ID] [--lips]
                         [--judge] [--workers 3] [--out review/screen]
 
 Run it from the project folder. Per clip (gen/clips/<id>.mp4) it samples 8 frames over the seconds the cut actually PLAYS and
@@ -76,7 +76,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--sb", default="storyboard.json")
 ap.add_argument("--clips", default="gen/clips")
 ap.add_argument("--lipdir", default="gen/lip_omni", help="the lip-sync clips folder, <id>.mp4 (shots of type lip, with --lips)")
-ap.add_argument("--editor", default="tools/cut.py", help="a text file with WINDOW = {...}, CLIPEND = {...}, RAMP = {...} (see the docstring)")
+ap.add_argument("--editor", default="tools/edit.py", help="a text file with WINDOW = {...}, CLIPEND = {...}, RAMP = {...} (see the docstring)")
 ap.add_argument("--only", default="")
 ap.add_argument("--lips", action="store_true", help="screen lip-sync shots too")
 ap.add_argument("--judge", action="store_true", help="ask the vision model about every strip")

@@ -1,6 +1,8 @@
 """Cut the clips to the beat-aligned storyboard, burn in kinetic captions, flash the drops, add the song.
 
-Usage: python edit.py [--draft]   (draft = stills instead of missing clips, faster encode)
+Usage: python edit.py [--draft]
+Stills stand in for missing clips in either mode, and a black frame where there is no still either (it says so per shot);
+--draft is only a faster, lower-quality encode. The song, the end card and the output name are the constants below.
 """
 import json
 import os
@@ -16,7 +18,9 @@ import captions  # noqa: E402
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SB = json.load(open(os.path.join(ROOT, "storyboard.json")))
-SONG = os.path.join(ROOT, "out-of-office.mp3")
+SONG = os.path.join(ROOT, "out-of-office.mp3")  # the song, saved in the project folder under this name
+TITLE, SUBTITLE = "OUT OF OFFICE", "AN AUTOMATED MUSIC VIDEO"  # the end card
+OUT_NAME = "OUT_OF_OFFICE"  # the film is written to the project folder as <OUT_NAME>.mp4, or <OUT_NAME>_draft.mp4
 TMP = os.path.join(ROOT, "build")
 os.makedirs(TMP, exist_ok=True)
 W, H, FPS = 1920, 1080, 30
@@ -85,6 +89,7 @@ def segment(shot, draft):
         chains.append(f"[0:v]scale=2400:1350,zoompan=z='min(1+0.0009*on,1.2)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
                       f"trim=duration={dur},setpts=PTS-STARTPTS[v0]")
     else:
+        print(f"{sid}: no gen/clips/{sid}.mp4 and no gen/stills/{sid}.png: black frame", file=sys.stderr, flush=True)
         inputs += ["-f", "lavfi", "-t", f"{dur}", "-i", f"color=c=black:s={W}x{H}:r={FPS}"]
         chains.append("[0:v]null[v0]")
     last, n = "v0", 1
@@ -115,6 +120,8 @@ def segment(shot, draft):
 
 def main():
     draft = "--draft" in sys.argv
+    if not os.path.exists(SONG):
+        sys.exit(f"song not found: {SONG}\nSave the song there, or change SONG at the top of this script.")
     segs = []
     for shot in SB:
         segs.append(segment(shot, draft))
@@ -124,9 +131,9 @@ def main():
     img = Image.new("RGB", (W, H), (0, 0, 0))
     d = ImageDraw.Draw(img)
     f1, f2 = captions.font(captions.BAHN, 240, "Bold Condensed"), captions.font(captions.MONO, 34)
-    t = "OUT OF OFFICE"
+    t = TITLE
     d.text(((W - f1.getlength(t)) / 2, 380), t, font=f1, fill=(255, 43, 214))
-    s2 = "AN AUTOMATED MUSIC VIDEO"
+    s2 = SUBTITLE
     d.text(((W - f2.getlength(s2)) / 2, 640), s2, font=f2, fill=(60, 240, 255))
     img.save(card)
     cardmp4 = os.path.join(TMP, "zz_card.mp4")
@@ -138,7 +145,7 @@ def main():
             f.write(f"file '{s.replace(os.sep, '/')}'\n")
     video = os.path.join(TMP, "video.mp4")
     run(["-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", video])
-    final = os.path.join(ROOT, "OUT_OF_OFFICE_draft.mp4" if draft else "OUT_OF_OFFICE.mp4")
+    final = os.path.join(ROOT, OUT_NAME + ("_draft.mp4" if draft else ".mp4"))
     run(["-i", video, "-i", SONG, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k",
          "-af", "apad=pad_dur=2.5", "-shortest", "-movflags", "+faststart", final])
     print("wrote", final)

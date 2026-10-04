@@ -1,7 +1,7 @@
 """Run Higgsfield jobs in parallel from a JSON job list, download results, resume-safe.
 
 Job: {"id", "model", "params": {...}, "refs": [paths], "start": path|null, "out": path}
-Usage: python gen.py jobs.json [workers]
+Usage: python gen.py jobs.json [workers] [ID,ID]   (workers: 4 by default; ID,ID runs only those jobs, e.g. one still to check the style)
 """
 import json
 import os
@@ -13,6 +13,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 HF = "higgsfield.cmd" if os.name == "nt" else "higgsfield"
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 ROOT = os.path.dirname(os.path.abspath(sys.argv[1]))
 UPLOADS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "uploads.json")
 LOG = os.path.join(ROOT, "gen_log.jsonl")

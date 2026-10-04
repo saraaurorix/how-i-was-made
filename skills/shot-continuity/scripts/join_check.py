@@ -69,6 +69,8 @@ a = ap.parse_args()
 if not a.cut and not a.stills:
     ap.error("give --cut FILE or --stills")
 FPS = a.fps
+if a.cut:
+    print(f"reading the cut at {FPS} fps (--fps): give the cut's own rate or every frame below is off")
 OUT = a.out or ("review/joins_stills" if a.stills else "review/joins")
 os.makedirs(os.path.join(OUT, "_f"), exist_ok=True)
 MONTAGE = {x for x in a.montage_sets.split(",") if x}

@@ -40,7 +40,7 @@ Every item once cost a paid redo or a review round. Run a gate's list before mov
 - [ ] **A mouth moving on a non-singing shot:** measured on a face crop (`scripts/lipsync_audit.py` flags it). Re-render closed-mouthed, or fall back to the still.
 - [ ] **Motion:** look for flips of direction in the seconds the cut plays. Look at a 0.1 s strip of every flagged *vehicle* shot, and compare the nose direction with the background stream (`scripts/carflow.py` for a signed number).
 - [ ] **Logic:** watch the *used* window for breaks (a head floating after a hatch shuts, a car changing).
-- [ ] **Fixes go into your `edit.py` dicts first** (`WINDOW`, `REVERSE`, `BAND_REVERSE`, `OVERRIDE`; generation-playbook §8). Re-roll only when a free fix can't work.
+- [ ] **Fixes go into your editor first** (per-shot tables such as `WINDOW`, `REVERSE`, `BAND_REVERSE`, `OVERRIDE`, listed in generation-playbook §8; they belong to the later videos' editor, which is not in this repo, so add the ones you need to your own). Re-roll only when a free fix can't work.
 - [ ] **Frame 0 matches the new still** (mean abs diff under about 12): a stale upload wasted paid clips twice.
 - [ ] **The intent screen:** `../shot-continuity/scripts/clip_screen.py --judge --workers 3` on every batch (`--lips` for sung shots). Read every FAIL's strip by eye.
 - [ ] **In motion:** a 0.25 s strip of every clip; 0.1 s steps where anything moves oddly. A wrong-direction flag is a failure unless you can show it in motion.

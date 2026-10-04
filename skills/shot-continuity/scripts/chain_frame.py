@@ -13,5 +13,13 @@ src = os.path.join(a.clips, a.a + ".mp4")
 _, _, fps = C.probe(src)
 w0 = C.window(win, a.a, a.default_window)
 idx = C.last_used_index(sb[a.a], w0, fps)
+have = C.count_frames(src)
+if idx >= have:
+    sys.exit(f"{a.a}: the cut plays its clip up to frame {idx} ({idx / fps:.2f} s) but the clip has {have} frames "
+             f"({have / fps:.2f} s): nothing written. Shorten the shot, lower its WINDOW, or re-roll a longer clip.")
+if os.path.exists(a.out):
+    os.remove(a.out)
 subprocess.run([C.FF, "-v", "error", "-y", "-i", src, "-vf", f"select=eq(n\\,{idx})", "-vframes", "1", a.out], check=True)
+if not os.path.exists(a.out) or os.path.getsize(a.out) == 0:
+    sys.exit(f"{a.a}: ffmpeg found no frame {idx} in {src}: nothing written.")
 print(f"{a.a}: window {w0} s, {C.nframes(sb[a.a])} edit frames, clip {fps:g} fps -> last used source frame {idx} ({idx / fps:.3f} s) -> {a.out}; set WINDOW[{a.b}] = {C.CHAIN_WINDOW}")

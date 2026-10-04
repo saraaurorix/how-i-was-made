@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 if len(sys.argv) < 3 or sys.argv[1] in ("-h", "--help"):
     sys.exit(__doc__)
 src, out_prefix = sys.argv[1], sys.argv[2]
+os.makedirs(os.path.dirname(out_prefix) or ".", exist_ok=True)
 ids = sys.argv[3].split(",") if len(sys.argv) > 3 else None
 files = sorted(glob.glob(os.path.join(src, "*.png")) + glob.glob(os.path.join(src, "*.jpg")))
 if ids:

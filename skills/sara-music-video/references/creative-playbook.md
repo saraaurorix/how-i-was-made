@@ -84,12 +84,14 @@ Tag Sara's spoken lines as female explicitly, leave a bar of music after any mal
 
 **Vary the sound per single.** The director noticed the songs sounding alike when every single used the Out of Office template. Keep Sara's voice; give each single its own reference sound. Suno blocks artist and song names, so describe the instrumentation, vocal and tempo instead, and never upload the reference track.
 
+The later videos are not out yet, so they go unnamed here and in the pacing table below.
+
 | Single | Sound |
 |---|---|
 | Out of Office | 128 BPM electro-pop, robotic vocoder lead, talkbox, distorted synth bass, four-on-the-floor, chanted chorus, huge EDM drop, key-change final chorus, ominous spoken outro |
-| A later video | spy-thriller string stabs, surf guitar, breathy vocal, about 143 BPM |
-| A later video | dark West Coast gangsta rap with a huge choir chorus, about 80–86 BPM, minor-key strings, boom-bap (a cloud-rap first attempt was rejected) |
-| A later video | electro-swing |
+| Later video A | spy-thriller string stabs, surf guitar, breathy vocal, about 143 BPM |
+| Later video B | dark West Coast gangsta rap with a huge choir chorus, about 80–86 BPM, minor-key strings, boom-bap (a cloud-rap first attempt was rejected) |
+| Later video C | electro-swing |
 
 **Settings:**
 - Advanced mode, v6, with your artist's saved Voice.

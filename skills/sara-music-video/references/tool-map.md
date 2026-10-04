@@ -7,8 +7,9 @@
 **The skill's `scripts/`:**
 - **The base** is the pipeline the later videos were built on, with their QA tools and casting helpers.
 - **Encoding and fonts:** the scripts were written on a Mac and encode on the GPU (Apple VideoToolbox) at low priority. `scripts/venc.py` gives the ffmpeg arguments for the machine's own GPU encoder where there is one, and x264 otherwise. Fonts go through `scripts/fonts.py`. `scripts/fal_env.py` reads `FAL_KEY` from the environment or a login shell.
+- **Not in this repo, all optional:** sync.so (a lip-sync service, routes B and C in generation-playbook §5), the Codex command-line tool (the two vision judges and `gpt_edit.py`), the Grok command-line tool (small image edits) and the Apple super-resolution tool (macOS 26, generation-playbook §7). Nothing in `TESTED.md` needed them except the judges.
 - **Setup:** copy the whole `scripts/` folder into your video as `tools/` (several scripts import `lipscore.py`, `fonts.py`, `venc.py` or `fal_env.py` and need `models/` beside them). The scripts assume the project root is `tools/..`, with `storyboard.json`, `words.json`, `gen/stills/`, `gen/clips/`, the song, and the stems under `sep_wav/htdemucs/<name>/`. Run each script once on a real shot before relying on it.
-- **Needs:** Python 3.10–3.12 and the repo's `requirements.txt` (it pins `mediapipe<1.0` and `av<19`); the Higgsfield command-line tool for `gen.py`; a fal.ai key for `falgen.py`; Demucs for the stems. Out of Office's own board predates the spec's field names (no `type`, `voice`, `look`, `set`), so the lip and casting scripts stop on it; `out-of-office/tools/build_jobs.py` and `edit.py` read that older format, not the spec's.
+- **Needs:** Python 3.10 or newer (tested on 3.12 and 3.14) and the repo's `requirements.txt` (it pins `mediapipe<1.0` and `av<19`); the Higgsfield command-line tool for `gen.py`; a fal.ai key for `falgen.py`; Demucs for the stems. Out of Office's own board predates the spec's field names (no `type`, `voice`, `look`, `set`), so the lip and casting scripts stop on it; `out-of-office/tools/build_jobs.py` and `edit.py` read that older format, not the spec's.
 - **Worked example:** `out-of-office/tools/build_jobs.py`, `out-of-office/tools/edit.py` and `out-of-office/tools/captions.py` contain Out of Office's per-shot content. Replace the dicts; keep the machinery.
 
 ## Scripts by stage
@@ -48,9 +49,9 @@ In this skill's `scripts/` unless the path says otherwise.
 | | `venc.py` | ffmpeg H.264 arguments: the machine's GPU encoder where there is one, x264 otherwise | |
 
 ## The editor: which features live where
-`out-of-office/tools/edit.py` is Out of Office's editor, and the only editor in this repo. It cuts the clips to the beat-aligned storyboard, burns in the captions, flashes the drops (`DROPS`) and adds the song; `--draft` uses stills in place of missing clips.
+`out-of-office/tools/edit.py` is Out of Office's editor, and the only editor in this repo. It cuts the clips to the beat-aligned storyboard, burns in the captions, flashes the drops (`DROPS`) and adds the song; stills stand in for missing clips in either mode, and a black frame where there is no still; `--draft` is the faster encode.
 
-**Per video, set `SONG`.** This skill's scripts find the vocal stem automatically.
+**Per video, set `SONG`, the end card and `OUT_NAME` at the top of `edit.py`, and empty its per-shot tables** (`DROPS` and `SPLIT` there; `SYSTEM`, `HUMAN` and `HOOK` in `captions.py`). This skill's scripts find the vocal stem automatically.
 
 **The later videos' editors have more** (their per-shot dicts are listed in generation-playbook §8). Those editors are not in this repo: when a video needs one of these, build it into your `edit.py` under the same name.
 

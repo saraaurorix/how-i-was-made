@@ -1,6 +1,13 @@
-"""Word-level transcript of the song (local Whisper), saved as JSON for lyric alignment."""
+"""Word-level transcript of the song (local Whisper), saved as JSON for lyric alignment.
+
+Usage: python transcribe.py song.mp3 words.json
+The first run downloads Whisper's small.en model (about 0.5 GB). It is English-only: use "small" for another language.
+"""
 import json
 import sys
+
+if len(sys.argv) < 3 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 
 from faster_whisper import WhisperModel
 

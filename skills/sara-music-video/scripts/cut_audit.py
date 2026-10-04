@@ -27,4 +27,6 @@ for a, b in zip(S, S[1:]):
         notes.append(f"the same singer's line continues into {b['id']} ('{nxt['w']}' @ {nxt['s']}): end the lip shot after the phrase")
     if notes:
         print(a["id"], "->", b["id"], f"cut {t}:", "; ".join(notes))
-print("audit done")
+lips = sum(1 for s in S if s.get("type") == "lip")
+print(f"audit done: {lips} lip shot(s) checked" if lips else
+      "audit done: no row has type \"lip\", so nothing was checked (this script reads type, voice, t1)")

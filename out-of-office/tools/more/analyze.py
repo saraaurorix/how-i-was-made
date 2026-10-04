@@ -5,6 +5,8 @@ import sys
 import librosa
 import numpy as np
 
+if len(sys.argv) < 3 or sys.argv[1] in ("-h", "--help"):
+    sys.exit("usage: python analyze.py song.mp3 timing.json")
 path = sys.argv[1]
 y, sr = librosa.load(path, sr=22050, mono=True)
 dur = len(y) / sr
@@ -45,7 +47,8 @@ chroma = librosa.feature.chroma_cqt(y=y, sr=sr, hop_length=hop)
 feat = np.vstack([librosa.util.normalize(mfcc, axis=1), chroma])
 bar_frames = librosa.time_to_frames([b["t"] for b in bars], sr=sr, hop_length=hop)
 sync = librosa.util.sync(feat, bar_frames, aggregate=np.median)
-bounds = librosa.segment.agglomerative(sync, 14)
+k = min(14, max(2, sync.shape[1] // 4))  # about one section per four bars, 14 at most (a song under 14 bars used to crash here)
+bounds = librosa.segment.agglomerative(sync, k)
 bound_t = sorted({round(bars[min(i, len(bars) - 1)]["t"], 2) for i in bounds})
 
 print(f"duration {dur:.2f}s  tempo {tempo:.1f} bpm  bar {bar:.3f}s  first downbeat~{start:.2f}s  bars {len(bars)}")

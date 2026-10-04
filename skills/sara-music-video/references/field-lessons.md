@@ -108,7 +108,7 @@ The wording that works and what fails without it (walkers, chairs, crowds, group
 
 ## §6 The edit
 
-- **Edit at 25 fps.** A 30 fps edit repeated every 5th–6th frame of 24/25 fps sources and made every move judder.
+- **Edit at 25 fps** (the later videos; Out of Office was cut at 30 fps, and the `shot-continuity` chaining tools assume 25). A 30 fps edit repeated every 5th–6th frame of 24/25 fps sources and made every move judder.
 - **Change speed by blending, never by dropping frames:** ffmpeg `framerate` blending for a plain speed change; straight-line speed ramps between knots (one shot ran 0.75× on the wind-up so the hit landed on its word, then 1.15× so the reaction landed on the next); `minterpolate` for fitting a dance to the beat. The chaining tools assume plain playback, so work out a ramped shot's last played frame by hand.
 - **A clip slowed below about 0.5× reads as frozen** (one at 0.44× did). Re-roll with motion instead. **And never speed a gesture up to land on the beat:** a guitar riff at 1.67× read as far too fast and cartoonish. Fit the music by where the action starts and stops, at 1.0×.
 - **The end still drives the motion as much as the prompt:** a playing-pose end still made her keep playing through a dead stop in the music. Design the end still for the state the music wants at the cut.

@@ -2,7 +2,7 @@
 
 Every script in this repo was run before it was published, on real footage wherever that costs nothing. This is the record: what ran, on what, and what was not run and why.
 
-- **Machine:** an Apple Silicon Mac, macOS, Python 3.12.
+- **Machine:** an Apple Silicon Mac, macOS, Python 3.12. The install and the main steps were repeated on Python 3.14.
 - **A clean install:** `requirements.txt` was installed into a brand-new environment and the scripts were run again from there. That is how two version pins were found (see the bottom of this page).
 - **Windows and Linux:** not tested. Out of Office's five scripts use only x264 and the font fallback, so they should run anywhere Python and ffmpeg do. The skills' scripts call `nice` and other POSIX functions in places: macOS and Linux only as written.
 - **Nothing here was run against a paid service.** The job runners were checked up to the point where they would submit.
@@ -23,7 +23,7 @@ Every script in this repo was run before it was published, on real footage where
 
 ## skills/sara-music-video/scripts
 
-Tested on a copy of a later video's project (its storyboard, stems, clips and lip-sync takes), because these scripts expect the newer board format: rows with `type`, `voice`, `look` and a place, as in `references/storyboard-spec.md`. Out of Office's board predates that format, so `lip_slices.py`, `lipsync_audit.py` and `lip_lag.py` stop on it with a missing `type`.
+Tested on a copy of a later video's project (its storyboard, stems, clips and lip-sync takes), because these scripts expect the newer board format: rows with `type`, `voice`, `look` and a place, as in `skills/sara-music-video/references/storyboard-spec.md`. Out of Office's board predates that format, so `lip_slices.py`, `lipsync_audit.py` and `lip_lag.py` stop on it with a missing `type`.
 
 | Script | Result | Notes |
 |---|---|---|
@@ -34,7 +34,7 @@ Tested on a copy of a later video's project (its storyboard, stems, clips and li
 | `casting_scan.py` | **Pass** | Needs a vocal stem and a reference stem with lines marked by singer |
 | `casting_clip.py` | **Pass** | A 16-second listening clip with title cards |
 | `clipsheet.py`, `contact.py` | **Pass** | Sheets checked by eye |
-| `cut_audit.py` | **Pass** | Needs `type` and `voice` on the rows |
+| `cut_audit.py` | **Pass** | Reads `type` and `voice` on the rows; without them it says it checked nothing |
 | `lipscore.py`, `lip_lag.py`, `lipsync_audit.py` | **Pass** | Mouth opening against the vocal; need the face model (included) and a vocal stem |
 | `lip_slices.py`, `masked_slice.py` | **Pass** | Slices identical to the ones used in production |
 | `lip_retime.py`, `lip_v2v.py`, `v2v_prep.py` | **Pass** | Each encodes video. `v2v_prep.py` was also run with `VENC=libx264` to prove the fallback encoder |
@@ -67,7 +67,7 @@ Tested on a copy of a later video's project: a 75-second stretch of a cut, its s
 
 The two judges (`clip_screen.py --judge`, `join_judge.py`) call the Codex command-line tool, signed in to a ChatGPT plan. Any command-line tool that can look at an image and answer in text can be swapped in.
 
-The chaining tools assume an editor that plays every frame of a clip once, at 25 frames a second, from a start offset per shot. Out of Office's editor runs at 30 and has no such offsets: these tools came from the later videos.
+The chaining tools assume an editor that plays every frame of a clip once, at 25 frames a second, from a start offset per shot (`WINDOW`). Out of Office's editor runs at 30 fps and picks its own start offset (40% into the spare length of a longer clip; `out-of-office/README.md`), so these tools' frame numbers do not describe an Out of Office cut: they came from the later videos. Give `join_check.py` and `story_sheets.py` the cut's rate with `--fps`.
 
 ## What a clean install found
 
@@ -77,3 +77,7 @@ Installing the newest version of everything broke two things, so `requirements.t
 - **PyAV 19** breaks audio loading in faster-whisper 1.2.1. Held below 19 (tested on 18.1).
 
 With those two pins, the scripts above ran from a new environment made by the commands in the README.
+
+## A stranger's test
+
+After the tests above, a second reader who had never seen the project cloned the repo, followed only its documents, and cut a 23-second film of six shots with `edit.py` (own song, own storyboard, own stills and clips), with no system ffmpeg, no Higgsfield tool and no keys on the machine. What stopped them, all fixed since: `analyze.py` crashed on a song shorter than 14 bars; the song's filename was given three ways; clips and stills named any other way than `<id>.mp4` and `<id>.png` fell back to black frames without a word; the skill's `contact.py` could not write into a new folder; `chain_frame.py` reported success and wrote nothing when a shot ran past its clip; a skill script copied on its own lost its helpers; `cp -R … ~/.claude/skills/` failed when that folder did not exist. The documents now say where a new project lives, which per-shot tables to empty, and that the editor cuts at 30 fps while the chaining tools assume 25. What that reader could not run is the same list as above: the paid job runners and the two judges.

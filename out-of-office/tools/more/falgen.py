@@ -15,6 +15,8 @@ from concurrent.futures import ThreadPoolExecutor
 import fal_env  # noqa: F401  (loads FAL_KEY)
 import fal_client
 
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 ROOT = os.path.dirname(os.path.abspath(sys.argv[1]))
 UPLOADS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fal_uploads.json")
 LOG = os.path.join(ROOT, "fal_log.jsonl")

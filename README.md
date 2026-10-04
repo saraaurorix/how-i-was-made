@@ -25,7 +25,7 @@ skills/
 
 ## Start here
 
-You need Python 3.10 to 3.12 (tested on 3.12; one package, MediaPipe, has no build for newer versions yet).
+You need Python 3.10 or newer (tested on 3.12 and 3.14).
 
 ```bash
 git clone https://github.com/saraaurorix/how-i-was-made.git
@@ -50,7 +50,7 @@ It prints `74 stills, 74 clips` and writes `jobs_stills.json` and `jobs_clips.js
 A Claude Code skill is a folder of instructions and helper scripts that Claude Code reads when a task calls for it. Copy both into your skills folder:
 
 ```bash
-cp -R skills/sara-music-video skills/shot-continuity ~/.claude/skills/
+mkdir -p ~/.claude/skills && cp -R skills/sara-music-video skills/shot-continuity ~/.claude/skills/
 ```
 
 Then open Claude Code in an empty project folder with your song in it and ask, for example: "Use the sara-music-video skill to plan a music video for this song." It will follow the order of work in `skills/sara-music-video/SKILL.md`, and it uses `shot-continuity` when shots have to connect.
@@ -63,10 +63,12 @@ Three things in the skills are Sara's and need swapping for your own artist: the
 |---|---|---|
 | The song | a [Suno](https://suno.com) account | Suno's plans |
 | Stills and clips | the Higgsfield command-line tool (`npm install -g @higgsfield/cli`, then `higgsfield auth login`) with credits; `tools/gen.py` drives it | per picture and per clip |
-| Lip-sync | a [fal.ai](https://fal.ai) key in the environment as `FAL_KEY`; `falgen.py` drives it | per second |
+| Lip-sync | Out of Office's ran on Higgsfield too (Seedance, then Wan 2.7: the jobs are in `more-prompts/`, run by `gen.py`). The skills also have a fal.ai route: a [fal.ai](https://fal.ai) key in the environment as `FAL_KEY`, and `falgen.py` drives it | per second |
 | Word times, beat grid, the edit, every check | nothing: they run on your machine | free |
 
 The scripts were written on Windows and then a Mac. `fonts.py` (in `tools/more/` and in each skill's `scripts/`) finds the closest fonts on your machine, and the skills' `venc.py` picks your GPU's video encoder, falling back to x264. Out of Office's five scripts should run anywhere Python does; the skills' scripts use `nice` and are macOS and Linux only as written.
+
+The skill documents also name tools that are not in this repo. All are optional: the Codex command-line tool (the two vision judges in `shot-continuity`, and `gpt_edit.py`), sync.so (one lip-sync route), the Grok command-line tool (small image edits) and an Apple super-resolution tool (macOS 26). Everything in `TESTED.md` ran without them except the two judges.
 
 Some of the lip-sync checks need the vocal on its own. That is Demucs: `pip install demucs`, then `python -m demucs --two-stems vocals -o sep song.mp3`. It is not in `requirements.txt` because it brings PyTorch with it.
 

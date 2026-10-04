@@ -4,6 +4,8 @@ Usage: python tools/gpt_edit.py jobs.json [workers=3] [ID,ID]"""
 import json, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")); os.chdir(ROOT)
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 jobs = json.load(open(sys.argv[1])); W = int(sys.argv[2]) if len(sys.argv) > 2 else 3
 only = set(sys.argv[3].split(",")) if len(sys.argv) > 3 else None
 def one(j):

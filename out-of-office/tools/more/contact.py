@@ -10,6 +10,8 @@ from PIL import Image, ImageDraw
 
 import fonts  # Windows font names -> the closest face on this machine (fonts.py sits beside this script)
 
+if len(sys.argv) < 3 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 src, out_prefix = sys.argv[1], sys.argv[2]
 ids = sys.argv[3].split(",") if len(sys.argv) > 3 else None
 files = sorted(glob.glob(os.path.join(src, "*.png")) + glob.glob(os.path.join(src, "*.jpg")))

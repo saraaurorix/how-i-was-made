@@ -184,12 +184,12 @@ Example: *Staging: the office floor's central aisle runs from the big desk (near
 1. **After the stills:** before any video spend.
 2. **After every cut:** as part of the cut review. The cut is what the viewer sees, captions included.
 
-**The join check.** Run it from the video's project folder. The scripts live in this skill's folder: call them by full path (`python ~/.claude/skills/shot-continuity/scripts/join_check.py …`) or copy the whole `scripts/` folder into the project as `tools/` (each script finds its helpers and the face model beside itself). Python 3.10–3.12 with the repo's `requirements.txt` (cv2, mediapipe below 1.0, imageio-ffmpeg, Pillow, numpy).
+**The join check.** Run it from the video's project folder. The scripts live in this skill's folder: call them by full path (`python ~/.claude/skills/shot-continuity/scripts/join_check.py …`) or copy the whole `scripts/` folder into the project as `tools/` (each script finds its helpers and the face model beside itself). Python 3.10 or newer with the repo's `requirements.txt` (cv2, mediapipe below 1.0, imageio-ffmpeg, Pillow, numpy). The commands below assume the copy. `--fps` is the cut's frame rate (25 unless you say otherwise); `--montage-sets` names the places whose internal cuts are a list by design (`rap,epilogue` are examples from a later video).
 ```bash
-python scripts/join_check.py --cut CUT.mp4 --montage-sets rap,epilogue
+python tools/join_check.py --cut CUT.mp4 --fps 25 --montage-sets rap,epilogue
 ```
 ```bash
-python scripts/join_check.py --stills --montage-sets rap,epilogue
+python tools/join_check.py --stills --montage-sets rap,epilogue
 ```
 - **Options:** `--from S --to S` for a window; `--out DIR` (the default is `review/joins` or `review/joins_stills`); `--sb` for another storyboard.
 - **Storyboard fields it reads:** `id`, `t0`, `t1` and a place, `set` (or `fmt`); and optionally `look`, `scene` (naming KEVIN turns the Kevin test on), `join`, `scene_id`, `staging` and `still_file`. Without a place per shot, the light check over-fires.
@@ -251,11 +251,11 @@ Validated against a full eye review of the 100 joins in a later video's first cu
 - **The action never happened.** She was waving something about at random, and a viewer had no idea what she was doing. The row's gag never took place.
 - **Something appeared that the row ruled out.** An aeroplane sat behind the people and was dragged around as they moved, which made no sense. Kling had drawn a real aircraft into a shot whose joke needed there to be none.
 
-Both were in the frame strips I read, but I read strips for faces, outfits and sides, never against the row's action. A continuity check asks "does this cut join?"; this one asks "does this shot do what it says, and nothing else?"
+Both were in the frame strips that had been read, but strips were read for faces, outfits and sides, never against the row's action. A continuity check asks "does this cut join?"; this one asks "does this shot do what it says, and nothing else?"
 
 **Run it** after every batch of clips (and on the cut):
 ```bash
-python scripts/clip_screen.py --judge --workers 3
+python tools/clip_screen.py --judge --workers 3
 ```
 - **Options:** `--only ID,ID`, `--lips` (lip shots too), `--clip FILE --only ID` (a take that isn't installed yet), `--out DIR` (the default is `review/screen`).
 - **What it screens:** 8 frames from the seconds the cut actually plays. The editor's `WINDOW`, `CLIPEND` and slow-down are read from the edit script given with `--editor`, if it defines them (a plain Python file with those dicts is enough; without one, every shot is screened from 0.15 s in).
@@ -275,14 +275,14 @@ python scripts/clip_screen.py --judge --workers 3
   - The first rule (FAIL on any "appears" or "moves wrong" answer) caught both flags and failed 35 accepted clips. A vision model can always fill those lists, so that rule was noise.
   - The calibrated rule catches both, in words close to the director's: she is dancing and waving a prop about; a visible aircraft contradicts the gag. It also passes both fixes. With the confirm pass it fails 5 of the 75 accepted clips (it was 35), all misreadings a glance at the strip clears; the list is in the reference.
 - **Known false alarms:**
-  - tracking shots (the background passing reads as a sliding crowd, even with a line in the prompt saying that's normal). NOT a subject who grows faster than the background while facing away: that is a backwards slide however the camera moves (I measured one away and the director saw it at once). Watch it at tenth-of-a-second steps; a direction-of-travel flag stands unless the subject plainly moves the way it faces;
+  - tracking shots (the background passing reads as a sliding crowd, even with a line in the prompt saying that's normal). NOT a subject who grows faster than the background while facing away: that is a backwards slide however the camera moves (one was measured away as a camera move, and the director saw it at once). Watch it at tenth-of-a-second steps; a direction-of-travel flag stands unless the subject plainly moves the way it faces;
   - a car receding from a fixed camera;
   - a prop that swings;
   - headless figures: it can't tell front from back, so it reverses which way they walk;
   - things the staging allows, such as a costume on a stand that is meant to walk off.
 - **Practice:** read every FAIL's strip by eye before it reaches the director, and glance at the CHECKs. Report what's confirmed; remake only what the director agrees to.
 - **Screen the sung shots too** (`--lips`). One screen skipped them, so nobody looked at her hands rising mid-shot or at the man beside her mouthing her line.
-- **A wrong-direction flag stands** unless you can show in motion that the subject moves the way it faces. Once I measured the flag away as a camera move, and the director saw the backwards slide at once.
+- **A wrong-direction flag stands** unless you can show in motion that the subject moves the way it faces. Once the flag was measured away as a camera move, and the director saw the backwards slide at once.
 - **After changing the question, re-calibrate:** `--rejudge <an earlier run> --sb <the rows as they stood>` re-asks about existing strips without re-sampling (`--keep` runs only the confirm pass). Judge a flagged clip against its row as it stood BEFORE the director's note, or the answer leaks in: one flagged row now literally says "no aeroplane".
 
 **Write rows the screen can check.** The judge compares against the words, so the ACTION must say what visibly happens and what doesn't: "no aeroplane anywhere", "nothing slides", "his head stays bare". Keep the row in step with the take that's in the cut. A row edited after its clip was made shows up as a false FAIL.
@@ -383,4 +383,4 @@ python scripts/clip_screen.py --judge --workers 3
   - `references/generation-flow.md`: the order of work and post-processing, agreed with the director.
   - `references/worked-example.md`: one stretch of a later video's first cut examined, the full join review in numbers, and the scene restaged under these rules.
   - `references/intent-screen-calibration.md`: how the intent screen's judge was tuned and measured, and how to measure it again.
-  - `references/project-pack.md`: optional: the `project_pack.json` a video can keep (no script for it is shipped), with everything stored and mapped to the project so it can be used as content (a website, a making-of). The join sheets, character sheets and repair lists go in its `qa` block; the review boards count as content too.
+  - `references/project-pack.md`: optional: the `project_pack.json` a video can keep (no script for it is shipped), with everything stored and mapped to the project so it can be used as content (a website, a making-of). The join sheets, character sheets and repair lists go in its `qa` block; the review boards count as content too. The script that writes the pack and the website that reads it are not in this repo; the format is here to write your own.

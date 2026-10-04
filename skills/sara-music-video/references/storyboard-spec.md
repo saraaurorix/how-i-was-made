@@ -1,6 +1,6 @@
 # The storyboard spec: the board is the contract
 
-**Why this file exists.** Across three later videos the director caught 33 problems (the map is in §6). By my reading, **29 of the 33 were decided, or left undecided, in the storyboard**: a story that was a list of pictures, a scene with no camera positions, a costume change nobody planned, an action Kling can't do, a lip line with no route. Every later check compares a still or a clip against its board row, so when the row is silent, no check can find the fault; the director finds it, and we patch. The director's verdict: a lot of it should have come from the storyboard, and much of the later work was patching what could have been sorted out a lot earlier.
+**Why this file exists.** Across three later videos the director caught 33 problems (the map is in §6). On a reading of the record, **29 of the 33 were decided, or left undecided, in the storyboard**: a story that was a list of pictures, a scene with no camera positions, a costume change nobody planned, an action Kling can't do, a lip line with no route. Every later check compares a still or a clip against its board row, so when the row is silent, no check can find the fault; the director finds it, and we patch. The director's verdict: a lot of it should have come from the storyboard, and much of the later work was patching what could have been sorted out a lot earlier.
 
 **How to use this (light touch).** This is the toolbox for the parts of a board that need more than the wrapper (`wrapper.md`): mainly continuous scenes, home sets, and anything that recurs. **A montage video needs only what Out of Office had:** id, times, the lyric, who sings, the picture, the action, the references, plus the join type. Everything else here is offered for when a scene needs it, not demanded: too many constraints lead to poorer work.
 
@@ -40,7 +40,7 @@ A board has three layers, written in this order. The machine form is `bible.json
 | `moves` | how many physical hand-offs the scene asks for (walk away, reach the doors, the stamp, the pivot, out, carried back = 6) | too many blind hand-offs in 30 s: every one is a place for a break |
 | `ledger` | continuous scenes: a table, one row per shot, each character's and the crowd's start and end state (where, doing, wearing, holding); row n+1 starts where row n ends, word for word | costume flips across gaps; the crowd seated, then leaving, then seated |
 
-**The move budget.** Each physical move is generated blind, so each is a place the chain can break. A later video's chorus asked for six in 30 seconds and went round in circles for two cuts. As a working limit (my inference from that section, not a measured law): more than about 4 moves in 30 s of a continuous scene means simplify the story, or plan each extra move as a designed start + end frame pair.
+**The move budget.** Each physical move is generated blind, so each is a place the chain can break. A later video's chorus asked for six in 30 seconds and went round in circles for two cuts. As a working limit (an inference from that section, not a measured law): more than about 4 moves in 30 s of a continuous scene means simplify the story, or plan each extra move as a designed start + end frame pair.
 
 ### C. Shots (one row each)
 
@@ -132,7 +132,7 @@ Do these in order. Each step's output is reviewed before the next starts; the di
 
 ## §3 The board gate
 
-**The lint** (optional; mechanical, deterministic, free): a list of things to look at, not a gate. `python scripts/board_lint.py storyboard.json [--bible bible.json]`. It reads the board text for the known mistakes: adjacent shots sharing a still, editing notes in a motion line, walkers with no stop, filter words, over-long shots, lip rows with no singer or route, labelled joins with no reason, continuous scenes with no ledger, FLOW joins whose states don't match, missing camera or scale, props with no sheet, risky verbs, multi-action lines, and the counts against the benchmark. **Run on four real boards** (FIX / LOOK):
+**The lint** (optional; mechanical, deterministic, free): a list of things to look at, not a gate. `python tools/board_lint.py storyboard.json [--bible bible.json]`. It reads the board text for the known mistakes: adjacent shots sharing a still, editing notes in a motion line, walkers with no stop, filter words, over-long shots, lip rows with no singer or route, labelled joins with no reason, continuous scenes with no ledger, FLOW joins whose states don't match, missing camera or scale, props with no sheet, risky verbs, multi-action lines, and the counts against the benchmark. **Run on four real boards** (FIX / LOOK):
 - Out of Office 3 / 7, nearly clean;
 - three later videos: 7 / 82, 7 / 118 and 4 / 22.
 
@@ -218,7 +218,7 @@ A shot in `storyboard.json`:
 
 ## §6 The shift-left map: where each problem should have been caught
 
-Every problem the director caught in those builds, the stage that could have prevented it, and the board field or rule that now does. "Board" includes the bible. The reading is mine; the catches are the director's, put in plain words.
+Every problem the director caught in those builds, the stage that could have prevented it, and the board field or rule that now does. "Board" includes the bible. The reading of each is this skill's; the catches are the director's, put in plain words.
 
 | # | The director caught | Should have been caught at | Now prevented by |
 |---|---|---|---|

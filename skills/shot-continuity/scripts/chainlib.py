@@ -43,10 +43,18 @@ def window(win, sid, default):
 
 
 def probe(path):
+    if not os.path.exists(path):
+        raise SystemExit(f"no such clip: {path}")
     s = subprocess.run([FF, "-i", path], capture_output=True, text=True).stderr
     w, h = map(int, re.search(r", (\d{3,4})x(\d{3,4})", s).groups())
     fps = float(re.search(r"([\d.]+) fps", s).group(1))
     return w, h, fps
+
+
+def count_frames(path):
+    """The number of video frames in a clip, counted without decoding (the packets are copied to a null output)."""
+    s = subprocess.run([FF, "-i", path, "-map", "0:v:0", "-c", "copy", "-f", "null", "-"], capture_output=True, text=True).stderr
+    return int(re.findall(r"frame=\s*(\d+)", s)[-1])
 
 
 def nframes(s):

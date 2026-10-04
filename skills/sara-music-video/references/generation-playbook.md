@@ -56,17 +56,17 @@ Contents
 
 **Analysis (run on the WAV, never the MP3):**
 ```
-python scripts/analyze.py song.wav timing.json                    # tempo, bar grid, sections
+python tools/analyze.py song.wav timing.json                    # tempo, bar grid, sections
 python -m demucs --two-stems vocals -n htdemucs -o sep_wav song.wav
-python scripts/transcribe.py sep_wav/htdemucs/<name>/vocals.wav words.json   # word times (faster-whisper)
-python scripts/align_lines.py                                      # lyric lines -> timed lines
+python tools/transcribe.py sep_wav/htdemucs/<name>/vocals.wav words.json   # word times (faster-whisper)
+python tools/align_lines.py                                      # lyric lines -> timed lines
 ```
 - **Whisper is not ground truth.**
   - Word starts can be 0.3–0.4 s off.
   - Medium hallucinates on crops ("Thank you for watching").
   - It can drop a dense chorus. Copy the words from an identical chorus, shifted by the onset cross-correlation.
 - **Check every lip cut against the vocal stem's actual onset** (energy plus pyin per 50 ms). `scripts/lip_slices.py` does energy-gated slices; prefer it to Whisper word masks when timings are doubtful.
-- **Import `cv2` and `faster_whisper` in separate processes on macOS.** Both bundle libavdevice; there are objc warnings.
+- **On macOS, import `cv2` and `faster_whisper` in separate processes.** Each bundles its own libavdevice, and loading both into one process prints Objective-C class warnings.
 
 ## §2 Storyboarding for generation
 
@@ -235,6 +235,8 @@ The routes below remain as fallbacks.
 
 ## §7 AI upscaling (Apple super-resolution, free)
 
+*The Swift tool this section describes needs macOS 26 and is not in this repo. The section stays for the method and the numbers.*
+
 **Two super-resolution traps:**
 - **Timing.** A window's frame 0 is the source frame *covering* the requested start, but AVFoundation stamps it with the start time. So the window's first timestamp is not a frame time, the next frames sit off the grid (duplicate or half-frame timestamps), and a time seek into the copy lands a frame out on some shots (Kling is 24 fps).
   - **Fix:** enter the copy by frame index. The source frame is the first with pts ≥ the 2-decimal seek. The window's frame 0 is the last source frame with pts ≤ the window's first timestamp. Use `trim=start_frame=j`, then rebuild pts with `setpts=N/(rate*TB)`.
@@ -282,7 +284,7 @@ The routes below remain as fallbacks.
 - **Segments are joined with `-c copy`,** so they must all come from one encoder: record the encoder used and force a full re-render when it changes; otherwise re-render just the changed shots.
 - **The drift check at the end** must be within one frame of the song plus the end card.
 
-**Encoding:** `h264_videotoolbox -allow_sw 0 -profile:v high -g 60 -q:v 70` for masters (without `-g`, VideoToolbox keyframes every 12 frames and bloats the file). q 65 starved grainy footage (a documentary grade got 4.5 Mbps). Decode is `-hwaccel videotoolbox`. A self-test decodes with `-hwaccel_output_format videotoolbox_vld` so a software fall-back errors instead of silently running on the CPU.
+**Encoding:** `scripts/venc.py` gives the arguments for the machine's own GPU encoder (x264 otherwise). On a Mac that is `h264_videotoolbox -allow_sw 0 -profile:v high -g 60 -q:v 70` for masters (without `-g`, VideoToolbox keyframes every 12 frames and bloats the file). q 65 starved grainy footage (a documentary grade got 4.5 Mbps). Decode is `-hwaccel videotoolbox`. A self-test decodes with `-hwaccel_output_format videotoolbox_vld` so a software fall-back errors instead of silently running on the CPU.
 
 **Captions** (Out of Office's are in `out-of-office/tools/captions.py`; the styles are Sara's house styles):
 - Sara: neon word-pops.

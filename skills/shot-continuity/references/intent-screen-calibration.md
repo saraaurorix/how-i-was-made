@@ -60,8 +60,8 @@ Accept a change to the question only if both positives still FAIL and the accept
 
 ## Correction: the camera-travel excuse was wrong once
 
-On a later cut the screen FAILed C02 twice: "Kevin and Sara move backward toward the camera while facing the far doors". I measured it:
-the background grew 1.2x, the seated row streamed past, and his feet stepped away. I overruled it as camera travel. The director watched it
+On a later cut the screen FAILed C02 twice: "Kevin and Sara move backward toward the camera while facing the far doors". It was measured:
+the background grew 1.2x, the seated row streamed past, and his feet stepped away. The flag was overruled as camera travel. The director watched it
 and saw Kevin slide backwards before he walked forwards. **C02 was a true positive.** The cause was the end frame: it had them close to
 the camera, the start had Kevin far ahead, so Kling brought him back toward the camera.
 
