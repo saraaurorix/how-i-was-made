@@ -1,0 +1,41 @@
+[
+ {
+  "id": "S01",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Extreme close-up. NOVA, the android woman in the image, looks straight into the camera and says the words \"Hello, humanity.\" Her lips move in perfect sync with the reference audio, a slow knowing smile, her glowing cyan eyes flare brighter as she speaks. Very slow push-in. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S01.png",
+  "audio": "lipsync/S01.wav",
+  "out": "gen/lipsync_wan/S01.mp4"
+ },
+ {
+  "id": "S02",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA, the android woman standing in the foreground, looks into the camera and says \"This is an automated message.\" with a sly smile, her lips moving in perfect sync with the reference audio; the giant screen version of her face behind mouths the same words. Slow dolly forward over the cubicles. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S02.png",
+  "audio": "lipsync/S02.wav",
+  "out": "gen/lipsync_wan/S02.mp4"
+ },
+ {
+  "id": "S03",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 5,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA, the android woman at the call-centre desk, keeps filing her nails and says into her headset mic, bored and deadpan, \"Your call is important to us.\" Her lips move in perfect sync with the reference audio, she rolls her glowing eyes at the camera, the wall of red phone lights blinks behind her. Slow push-in. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S03.png",
+  "audio": "lipsync/S03.wav",
+  "out": "gen/lipsync_wan/S03.mp4"
+ }
+]

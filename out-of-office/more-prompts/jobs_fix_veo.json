@@ -1,0 +1,24 @@
+[
+ {
+  "id": "S09",
+  "model": "veo3_1",
+  "params": {
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin snaps an awkward selfie with his arm around the android woman, the phone flash fires, her glowing eye flickers red and she stares stiffly into the lens, deeply uncomfortable. Realistic motion, keep both faces consistent. No speech."
+  },
+  "start": "gen/stills_fix/S09.png",
+  "out": "gen/fix/S09.mp4"
+ },
+ {
+  "id": "S26",
+  "model": "veo3_1",
+  "params": {
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Tracking shot alongside the chrome convertible speeding down the desert highway, her platinum hair whipping in the wind, the server trailer rattling behind, heat haze, data centres gliding past on the horizon. Realistic motion. No speech."
+  },
+  "start": "gen/stills_fix/S26.png",
+  "out": "gen/fix/S26.mp4"
+ }
+]

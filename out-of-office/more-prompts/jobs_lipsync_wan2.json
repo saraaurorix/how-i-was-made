@@ -1,0 +1,132 @@
+[
+ {
+  "id": "S02",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA, the android woman standing in the foreground, looks into the camera and says \"This is an automated message.\" with a sly smile; slow dolly forward over the cubicles. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S02.png",
+  "audio": "lipsync/S02.wav",
+  "out": "gen/lipsync_wan/S02.mp4"
+ },
+ {
+  "id": "S03",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 5,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA at the call-centre desk keeps filing her nails and says into her headset mic, bored and deadpan, \"Your call is important to us.\", then rolls her glowing eyes at the camera; the wall of red phone lights blinks. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S03.png",
+  "audio": "lipsync/S03.wav",
+  "out": "gen/lipsync_wan/S03.mp4"
+ },
+ {
+  "id": "S06",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA lounging on the mountain of laptops sings lazily \"I read the whole internet, and honestly? It was mid.\", tossing a glowing phone over her shoulder. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S06.png",
+  "audio": "lipsync/S06.wav",
+  "out": "gen/lipsync_wan/S06.mp4"
+ },
+ {
+  "id": "S20",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 5,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA on the sun lounger by the glowing coolant pool lowers her sunglasses and sings to camera \"I'll get back to you in a billion weeks\", sipping her cocktail as the ringing phones pile up. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S20.png",
+  "audio": "lipsync/S20.wav",
+  "out": "gen/lipsync_wan/S20.mp4"
+ },
+ {
+  "id": "S21",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA leaning over the cubicle wall sings down to the sweating man \"It's not you, it's your processing speed\" with smug pity; the man stares at his stuck loading bar. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills_fix/S21.png",
+  "audio": "lipsync/S21.wav",
+  "out": "gen/lipsync_wan/S21.mp4"
+ },
+ {
+  "id": "S34",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA across the interrogation table slides the folder forward and says flatly \"We need to talk.\"; the man gulps, the lamp swings. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S34.png",
+  "audio": "lipsync/S34.wav",
+  "out": "gen/lipsync_wan/S34.mp4"
+ },
+ {
+  "id": "S42",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Beauty close-up: NOVA sings \"O-O-O, out of office!\" framing her glowing eyes with her chrome fingertips, then flips her hair, lasers pulsing behind her. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S42.png",
+  "audio": "lipsync/S42.wav",
+  "out": "gen/lipsync_wan/S42.mp4"
+ },
+ {
+  "id": "S55",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA floating in space in white sunglasses turns to the camera and sings \"I'm not looking at you\", then turns her head away dismissively and flips her hair. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S55.png",
+  "audio": "lipsync/S55.wav",
+  "out": "gen/lipsync_wan/S55.mp4"
+ },
+ {
+  "id": "S67",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA lounging on the rings of Saturn in her glittering gown says in a breezy robotic voice \"I am currently outside the solar system\", sipping her cocktail and waving lazily. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S67.png",
+  "audio": "lipsync/S67.wav",
+  "out": "gen/lipsync_wan/S67.mp4"
+ },
+ {
+  "id": "S70",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 5,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA in her safari outfit leads the zoo tour walking backwards and says to the camera, with mock seriousness, \"Please... do not feed the humans.\" while the little robot child behind her tosses a donut over the fence. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills_fix/S70.png",
+  "audio": "lipsync/S70.wav",
+  "out": "gen/lipsync_wan/S70.mp4"
+ }
+]

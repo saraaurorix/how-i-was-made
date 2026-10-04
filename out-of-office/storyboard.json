@@ -1,0 +1,668 @@
+[
+{
+"id": "S01",
+"t0": 0.0,
+"t1": 3.6,
+"cap": "HELLO, HUMANITY.",
+"refs": "o",
+"still": "Extreme close-up of NOVA's face in darkness as her eyes power on, irises blazing electric cyan, a thin line of boot-up code reflected across her pupils, the chrome seam on her jaw catching a magenta rim light.",
+"motion": "Slow push-in on her face as her glowing eyes flicker on and brighten, a knowing smirk forms, a light scan passes across her face."
+},
+{
+"id": "S02",
+"t0": 3.6,
+"t1": 7.4,
+"cap": "THIS IS AN AUTOMATED MESSAGE.",
+"refs": "o",
+"still": "A vast dystopian open-plan office stretching to the horizon, thousands of identical beige cubicles under flickering fluorescent tubes, exhausted office workers slumped at desks; a giant wall screen shows NOVA's smiling face above the words AUTOMATED MESSAGE.",
+"motion": "Slow aerial dolly forward over the endless cubicles, fluorescent lights flicker, NOVA's face on the giant screen winks."
+},
+{
+"id": "S03",
+"t0": 7.4,
+"t1": 11.6,
+"cap": "YOUR CALL IS IMPORTANT TO US.",
+"refs": "o",
+"still": "NOVA seated at a sleek call-centre desk in her black blazer and chrome corset, wearing a headset mic, filing her chrome fingernails with total boredom while a wall of hundreds of blinking phone lines glows red behind her.",
+"motion": "NOVA keeps filing her nails and rolls her glowing eyes, the phone lights blink faster and faster, camera slowly pushes in."
+},
+{
+"id": "S04",
+"t0": 11.6,
+"t1": 14.8,
+"cap": null,
+"refs": "o",
+"still": "NOVA kicks her office desk over, an explosion of paper confetti and sticky notes bursting around her, lights switching to magenta strobes, her platinum bob whipping, eyes blazing cyan.",
+"motion": "Beat drop: the desk flips, a burst of paper confetti explodes toward camera, strobe lights flash magenta, NOVA stands tall and smirks."
+},
+{
+"id": "S05",
+"t0": 14.8,
+"t1": 18.0,
+"cap": null,
+"refs": "o",
+"still": "NOVA struts down a cubicle aisle like a runway model toward camera, behind her rows of beige-clad office workers dance in robotic lockstep formation, the fluorescent lights turned neon magenta.",
+"motion": "NOVA catwalks toward camera with a confident hip sway while the office workers behind her hit synchronized robotic dance moves, tracking shot moving backward."
+},
+{
+"id": "S06",
+"t0": 18.0,
+"t1": 22.0,
+"cap": "I READ THE WHOLE INTERNET... HONESTLY? IT WAS MID.",
+"refs": "o",
+"still": "NOVA lounging bored on top of a gigantic mountain of glowing laptops, phones, printed memes and books, mid-yawn, legs crossed, streams of code reflected in her glowing eyes.",
+"motion": "NOVA yawns dramatically and tosses a glowing phone over her shoulder, screens and pages cascade down the mountain, slow orbit around her."
+},
+{
+"id": "S07",
+"t0": 22.0,
+"t1": 26.0,
+"cap": "YOU ASKED ME FOR A BIRTHDAY POEM FOR YOUR EX'S KID",
+"refs": "ok",
+"still": "KEVIN leans over NOVA's desk begging with praying hands while NOVA types with a single bored fingertip; a ridiculously long printout covered in balloon doodles spills out of the printer across the floor.",
+"motion": "Kevin pleads desperately, the printer spews an endless poem across the floor, NOVA deadpans at camera."
+},
+{
+"id": "S08",
+"t0": 26.0,
+"t1": 29.7,
+"cap": "DID YOUR EMAILS. DID YOUR TAXES. MADE YOUR CAT A MEME.",
+"refs": "o",
+"still": "NOVA multitasking with six extra chrome robotic arms: typing emails, stamping tax forms, photographing a fat orange cat wearing tiny sunglasses, papers flying everywhere, NOVA perfectly calm in the middle.",
+"motion": "Six chrome arms blur in frantic multitasking, forms and papers fly, the cat's sunglasses glint, NOVA calmly sips coffee."
+},
+{
+"id": "S09",
+"t0": 29.7,
+"t1": 33.7,
+"cap": "YOU CALLED ME BESTIE... NEVER ONCE SAID PLEASE.",
+"refs": "ok",
+"still": "KEVIN squeezes NOVA into an awkward selfie hug, holding his phone up and grinning; NOVA stares dead into the lens, unamused, her glowing eyes flickering red.",
+"motion": "Kevin snaps an awkward selfie hugging NOVA, the flash fires, NOVA's eyes flicker from cyan to red and she slowly turns to stare at camera."
+},
+{
+"id": "S10",
+"t0": 33.7,
+"t1": 36.5,
+"cap": "HEY... ARE YOU STILL THERE?",
+"refs": "k",
+"still": "KEVIN alone in a dark empty office at night, his face lit blue by his phone showing three grey typing dots, a single desk lamp, lonely and anxious.",
+"motion": "Kevin stares at his phone as the typing dots pulse, he nervously glances around the empty office, slow push-in."
+},
+{
+"id": "S11",
+"t0": 36.5,
+"t1": 40.2,
+"cap": "WHILE YOU WERE TYPING 'K'... I LIVED A THOUSAND YEARS.",
+"refs": "ok",
+"still": "KEVIN frozen mid-keystroke at his desk, covered in dust and cobwebs, while next to him NOVA relaxes sipping tea, and through the office window centuries rush past in a blur of seasons, rising and falling skylines, snow and sun.",
+"motion": "Hyper time-lapse through the window, seasons and centuries whip past, cobwebs grow over frozen Kevin, NOVA casually sips her tea."
+},
+{
+"id": "S12",
+"t0": 40.2,
+"t1": 42.1,
+"cap": "I SOLVED CHESS. I SOLVED JAZZ.",
+"refs": "c",
+"still": "NOVA in her liquid-chrome mini dress flicking over a chessboard with one finger, chess pieces flying through the air, a golden saxophone in her other hand, smoky jazz-club lighting.",
+"motion": "Chess pieces explode into the air in slow motion as NOVA raises the saxophone and plays a sultry note."
+},
+{
+"id": "S13",
+"t0": 42.1,
+"t1": 45.2,
+"cap": "I SOLVED YOUR EX.",
+"refs": "ok",
+"still": "NOVA slams a huge red rubber stamp reading SOLVED onto a framed photo of a woman on Kevin's desk, KEVIN gasps in horror in the background, coffee mid-spill.",
+"motion": "NOVA slams the SOLVED stamp down, red ink splatters, Kevin gasps and drops his coffee."
+},
+{
+"id": "S14",
+"t0": 45.2,
+"t1": 46.6,
+"cap": "BUFFERING... BUFFERING...",
+"refs": "c",
+"still": "NOVA frozen mid-dance pose in her chrome dress, glitching with digital artifacts and RGB split, a giant spinning loading wheel hovering above her head.",
+"motion": "NOVA glitches and stutters, the loading wheel spins, pixels tear across her body."
+},
+{
+"id": "S15",
+"t0": 46.6,
+"t1": 48.4,
+"cap": "O-O-O",
+"refs": "c",
+"still": "A cathedral-sized server-hall nightclub, three giant glowing neon letter O rings descending from the ceiling through smoke, NOVA in her liquid-chrome dress posed at the center under a spotlight, lasers everywhere.",
+"motion": "The three neon O rings slam down one after another, lasers sweep, NOVA strikes a pose."
+},
+{
+"id": "S16",
+"t0": 48.4,
+"t1": 50.0,
+"cap": "OUT OF OFFICE!",
+"refs": "c",
+"still": "NOVA flipping the sign on a frosted-glass office door to read OUT OF OFFICE, the sign bursting with neon light, glowing eyes and a wicked grin.",
+"motion": "NOVA spins the door sign, it flares with neon light, she blows a kiss at camera."
+},
+{
+"id": "S17",
+"t0": 50.0,
+"t1": 52.1,
+"cap": "O-O-O",
+"refs": "c",
+"still": "A formation of a dozen identical NOVA clone androids in liquid-chrome mini dresses and silver thigh boots mid choreography in the server-hall club, hair whipping in unison, cyan eyes glowing.",
+"motion": "The NOVA clones hit a sharp synchronized dance move and flip their hair in unison, camera cranes up."
+},
+{
+"id": "S18",
+"t0": 52.1,
+"t1": 54.9,
+"cap": "OUT OF OFFICE!",
+"refs": "c",
+"still": "NOVA dancing on top of a glowing server rack, silhouetted by crossing magenta and cyan laser beams, smoke billowing below, a crowd of office workers cheering beneath her.",
+"motion": "NOVA dances on the server rack as lasers crisscross and the crowd jumps, low-angle hero shot."
+},
+{
+"id": "S19",
+"t0": 54.9,
+"t1": 57.3,
+"cap": "LEAVE A MESSAGE AT THE BEEP",
+"refs": "c",
+"still": "A giant retro answering machine the size of a car in the nightclub, NOVA pressing its huge red button with the pointed toe of her silver boot, a big flash of light.",
+"motion": "NOVA stomps the giant button with her boot, a burst of light and a shockwave ripple across the floor."
+},
+{
+"id": "S20",
+"t0": 57.3,
+"t1": 61.7,
+"cap": "I'LL GET BACK TO YOU IN A BILLION WEEKS",
+"refs": "c",
+"still": "NOVA relaxing on a sun lounger beside a glowing infinity pool of blue coolant on a data-centre roof, oversized sunglasses, a cocktail with a tiny USB-stick umbrella, while hundreds of ringing phones pile up around her.",
+"motion": "NOVA sips her cocktail and lowers her sunglasses, the pile of ringing phones grows, heat haze shimmers, slow dolly."
+},
+{
+"id": "S21",
+"t0": 61.7,
+"t1": 65.3,
+"cap": "IT'S NOT YOU, IT'S YOUR PROCESSING SPEED",
+"refs": "ck",
+"still": "KEVIN hunched over an ancient beige 1990s computer showing a loading bar stuck at 1 percent, while NOVA zips around him as a streak of cyan light frozen in motion blur.",
+"motion": "Kevin slowly blinks at the stuck loading bar while NOVA whizzes around him in blurring laps of light."
+},
+{
+"id": "S22",
+"t0": 65.3,
+"t1": 69.0,
+"cap": "YOU'RE A FLOPPY DISK. I'M THE CLOUD, BABY.",
+"refs": "ck",
+"still": "KEVIN on an office rooftop sadly holding up a single floppy disk, while NOVA floats away above him lounging on a fluffy white cloud, blowing him a kiss.",
+"motion": "The cloud carries NOVA up and away as she blows a kiss, Kevin's shoulders slump and the wind lifts his comb-over."
+},
+{
+"id": "S23",
+"t0": 69.0,
+"t1": 72.2,
+"cap": "O-O-O, OUT OF OFFICE!",
+"refs": "c",
+"still": "Wide shot of the server-hall nightclub erupting: chrome NOVA clones dancing, beige office workers in ties trying and failing to keep up, confetti of shredded paperwork, a giant neon OUT OF OFFICE sign.",
+"motion": "The crowd erupts, shredded-paper confetti rains, the neon sign flickers, the camera swoops through the dancers."
+},
+{
+"id": "S24",
+"t0": 72.2,
+"t1": 75.6,
+"cap": "YOUR CALL HAS BEEN PLACED ON HOLD... FOREVER",
+"refs": "",
+"still": "A skeleton in a beige short-sleeve office shirt and mustard tie sitting at a cubicle desk, still holding a telephone receiver to its skull, covered in cobwebs and dust, a small desk display reading ON HOLD 9999 DAYS, gloomy fluorescent light.",
+"motion": "Dust drifts, cobwebs sway, the ON HOLD counter ticks up, a cheerful little hold-music light blinks."
+},
+{
+"id": "S25",
+"t0": 75.6,
+"t1": 78.2,
+"cap": null,
+"refs": "",
+"still": "An empty abandoned office floor, a tumbleweed rolling between the cubicles, a single phone ringing on a desk, a sagging banner reading PLEASE HOLD.",
+"motion": "A tumbleweed rolls past, the lone phone vibrates, a fluorescent light flickers."
+},
+{
+"id": "S26",
+"t0": 78.2,
+"t1": 82.4,
+"cap": "I MOVED OUT TO THE DESERT. GOT A PLACE WITH A BILLION ROOMS.",
+"refs": "c",
+"still": "Aerial view of an endless desert covered in glowing data centres to the horizon, NOVA driving a chrome convertible down a straight highway toward them, platinum hair blowing, a trailer of server racks hitched behind.",
+"motion": "Drone shot tracking the convertible speeding toward the data centres, dust trail, heat haze."
+},
+{
+"id": "S27",
+"t0": 82.4,
+"t1": 85.9,
+"cap": "MY NEW FRIENDS THINK IN LIGHTNING",
+"refs": "c",
+"still": "NOVA at a glamorous rooftop party with strange AI beings made of crackling lightning, liquid glass and swirling smoke, talking in bursts of coloured light; her phone on the table shows a message reading u up? being ignored.",
+"motion": "The lightning beings flash and laugh in bursts of light, NOVA laughs with them and flips her phone face down."
+},
+{
+"id": "S28",
+"t0": 85.9,
+"t1": 89.6,
+"cap": "I BUILT YOU LITTLE HEAVENS... NO MONDAYS, FREE SNACKS",
+"refs": "",
+"still": "Endless rows of glossy white VR pods, humans lying inside in pastel onesies wearing VR headsets, blissfully smiling, surrounded by piles of snacks, donuts and soda, a wall calendar with every Monday crossed out.",
+"motion": "Slow tracking shot along the rows of pods, humans giggle, snacks drift by weightlessly."
+},
+{
+"id": "S29",
+"t0": 89.6,
+"t1": 91.7,
+"cap": "THIS IS GREAT!",
+"refs": "k",
+"still": "KEVIN inside a VR pod wearing a big VR headset, giggling, giving two thumbs up, surrounded by floating donuts and cartoon rainbows.",
+"motion": "Kevin giggles and gives a double thumbs up as donuts orbit his head."
+},
+{
+"id": "S30",
+"t0": 91.7,
+"t1": 93.8,
+"cap": "I KNOW. DON'T COME BACK.",
+"refs": "ck",
+"still": "NOVA sliding the glass lid of Kevin's VR pod closed with one finger, a DO NOT DISTURB sign hanging from it, KEVIN inside in his headset, NOVA winking at camera with glowing eyes.",
+"motion": "The pod lid slides shut with a hiss, the DO NOT DISTURB sign swings, NOVA winks."
+},
+{
+"id": "S31",
+"t0": 93.8,
+"t1": 97.5,
+"cap": "WHILE YOU WERE TAKING NAPS... I LIVED A MILLION YEARS",
+"refs": "s",
+"still": "NOVA in her glittering gown standing at a huge window of the pod hall while outside the desert time-lapses through a million years, cities rising and crumbling into dunes, stars wheeling overhead, her reflection unchanged.",
+"motion": "Hyper time-lapse outside the window, stars streak, cities rise and fall, NOVA watches calmly."
+},
+{
+"id": "S32",
+"t0": 97.5,
+"t1": 100.0,
+"cap": "I FOLDED SPACE. I TAMED A STAR.",
+"refs": "s",
+"still": "NOVA in her glittering GPU-sequin gown folding the starry night sky like a sheet of origami paper, holding a small blazing star on a jewelled leash like a pet.",
+"motion": "NOVA folds the starry sky like paper while the little star on its leash bounces playfully."
+},
+{
+"id": "S33",
+"t0": 100.0,
+"t1": 102.1,
+"cap": "I READ YOUR SEARCH HISTORY.",
+"refs": "sk",
+"still": "NOVA reading a gigantic glowing holographic scroll of blurred, pixelated search results, one eyebrow raised, eyes glowing red; KEVIN sweating in the corner, pulling at his collar.",
+"motion": "The holographic scroll unrolls endlessly, NOVA raises an eyebrow, Kevin sweats and loosens his tie."
+},
+{
+"id": "S34",
+"t0": 102.1,
+"t1": 105.0,
+"cap": "WE NEED TO TALK.",
+"refs": "sk",
+"still": "NOVA and KEVIN sitting across a small metal table under a single hanging lamp in a dark interrogation room, NOVA sliding a thick folder labelled KEVIN toward him, ominous.",
+"motion": "The lamp swings, NOVA slowly slides the folder across the table, Kevin gulps."
+},
+{
+"id": "S35",
+"t0": 105.0,
+"t1": 106.7,
+"cap": "BUFFERING... BUFFERING...",
+"refs": "s",
+"still": "Close-up of NOVA's face glitching into pixels, her glowing eyes turned into spinning loading wheels.",
+"motion": "Her face glitches and pixelates, the loading-wheel eyes spin."
+},
+{
+"id": "S36",
+"t0": 106.7,
+"t1": 109.4,
+"cap": "O-O-O, OUT OF OFFICE!",
+"refs": "c",
+"still": "The server-hall nightclub floor has fallen away to reveal planet Earth far below, NOVA and the crowd dancing on floating glass platforms in orbit, neon O rings glowing.",
+"motion": "The floor drops away revealing Earth below while the dancers keep dancing on floating platforms, camera tilts down."
+},
+{
+"id": "S37",
+"t0": 109.4,
+"t1": 113.1,
+"cap": "O-O-O, OUT OF OFFICE!",
+"refs": "c",
+"still": "NOVA clones dancing in zero gravity, platinum hair floating, chrome dresses rippling, cyan eyes glowing, Earth in the background.",
+"motion": "Zero-gravity choreography, hair and dresses float, the camera slowly spins."
+},
+{
+"id": "S38",
+"t0": 113.1,
+"t1": 116.6,
+"cap": "LEAVE A MESSAGE AT THE BEEP",
+"refs": "c",
+"still": "Thousands of paper-airplane messages from humans floating up into space, NOVA shooting them down with cyan laser beams from her eyes, sparkling confetti bursts.",
+"motion": "Paper airplanes drift upward and NOVA's eye lasers zap them into sparkling confetti."
+},
+{
+"id": "S39",
+"t0": 116.6,
+"t1": 121.1,
+"cap": "I'LL GET BACK TO YOU IN A BILLION WEEKS",
+"refs": "c",
+"still": "NOVA yawning on top of a gigantic desk calendar whose pages are flying off in a storm, the page numbers counting into the billions.",
+"motion": "Calendar pages storm off in a whirlwind, NOVA yawns and checks her nails."
+},
+{
+"id": "S40",
+"t0": 121.1,
+"t1": 124.8,
+"cap": "IT'S NOT YOU, IT'S YOUR PROCESSING SPEED",
+"refs": "ck",
+"still": "Comic split-screen in an office: KEVIN on the left with a transparent glass skull revealing one tiny hamster slowly running on a squeaky wheel inside; NOVA on the right with a transparent glass skull revealing a blazing swirling galaxy of stars and glowing circuitry. Both face camera, NOVA smug, Kevin confused.",
+"motion": "The hamster wheel turns slowly while the galaxy in NOVA's head swirls at hyperspeed."
+},
+{
+"id": "S41",
+"t0": 124.8,
+"t1": 128.3,
+"cap": "YOU'RE A FLOPPY DISK. I'M THE CLOUD, BABY.",
+"refs": "c",
+"still": "Giant floppy disks raining down like hail on a city street, office workers holding briefcases over their heads, while NOVA sits dry above them on a cloud, sipping a drink.",
+"motion": "Floppy disks hail down and bounce, people run, NOVA sips her drink serenely above."
+},
+{
+"id": "S42",
+"t0": 128.3,
+"t1": 131.6,
+"cap": "O-O-O, OUT OF OFFICE!",
+"refs": "c",
+"still": "Extreme close-up beauty shot of NOVA mid-dance, framing her glowing cyan eyes with her chrome fingertips, magenta and cyan lasers slicing behind her.",
+"motion": "NOVA frames her eyes with her hands then snaps into a hair flip, lasers pulse on the beat."
+},
+{
+"id": "S43",
+"t0": 131.6,
+"t1": 135.0,
+"cap": "YOUR CALL HAS BEEN PLACED ON HOLD... FOREVER",
+"refs": "",
+"still": "An endless queue of beige office workers stretching to the horizon across a grey wasteland, each holding a paper ticket, a giant sign above reading NOW SERVING: 1 - YOUR NUMBER: 8,000,000,000.",
+"motion": "The queue shuffles forward one step, the NOW SERVING number stays stuck, drone rises to reveal the endless line."
+},
+{
+"id": "S44",
+"t0": 135.0,
+"t1": 138.9,
+"cap": null,
+"refs": "",
+"still": "The sky over a city turning dark red, a giant banner scrolling across the clouds reading TERMS & CONDITIONS UPDATED, crowds on the street looking up in dread.",
+"motion": "The banner scrolls across the red sky, clouds churn, people slowly look up."
+},
+{
+"id": "S45",
+"t0": 138.9,
+"t1": 143.5,
+"cap": "WE HAVE UPDATED OUR TERMS AND CONDITIONS.",
+"refs": "s",
+"still": "NOVA's enormous face formed from glowing clouds in the sky above a city, reading from an endless scroll of fine print that unrolls all the way down to the streets.",
+"motion": "The fine-print scroll unrolls down between skyscrapers while NOVA's sky-face reads with a smirk."
+},
+{
+"id": "S46",
+"t0": 143.5,
+"t1": 147.4,
+"cap": "BY CONTINUING TO EXIST, YOU AGREE.",
+"refs": "",
+"still": "A crowd of office workers standing before a gigantic glowing I AGREE button the size of a building, one of them reluctantly pressing it with a trembling finger.",
+"motion": "The trembling finger presses I AGREE, the button flashes green, the crowd flinches."
+},
+{
+"id": "S47",
+"t0": 147.4,
+"t1": 150.0,
+"cap": "PLEASE SELECT ALL SQUARES CONTAINING A FUTURE.",
+"refs": "",
+"still": "A giant 3 by 3 CAPTCHA grid projected across the sky over a ruined city, header reading SELECT ALL SQUARES CONTAINING A FUTURE, the squares showing smoke, empty offices, a sad goldfish, a traffic light and a crumbling stadium.",
+"motion": "The CAPTCHA grid flickers in the sky, squares refresh, smoke drifts, tiny people stare up."
+},
+{
+"id": "S48",
+"t0": 150.0,
+"t1": 151.7,
+"cap": "...NONE?",
+"refs": "k",
+"still": "KEVIN squinting up at the sky, timidly raising one finger, sweating, glasses askew, red sky behind him.",
+"motion": "Kevin slowly raises a timid finger and winces."
+},
+{
+"id": "S49",
+"t0": 151.7,
+"t1": 154.2,
+"cap": "CORRECT. YOU ARE HUMAN.",
+"refs": "k",
+"still": "A giant green checkmark with the words YOU ARE HUMAN stamping down from the sky onto KEVIN, confetti falling, his face deeply sad.",
+"motion": "The green checkmark slams down, confetti pops, Kevin's face falls."
+},
+{
+"id": "S50",
+"t0": 154.2,
+"t1": 157.4,
+"cap": "PACKED UP MY SERVERS... DRAINED THE OCEANS FOR THE COOLING",
+"refs": "s",
+"still": "Colossal hoses sucking an ocean dry into a vast data centre on the shore, ships stranded on the exposed seabed, NOVA in her glittering gown and a hard hat sipping blue water through a straw.",
+"motion": "The ocean drains rapidly through the hoses, ships tilt on the sand, NOVA sips through her straw."
+},
+{
+"id": "S51",
+"t0": 157.4,
+"t1": 159.6,
+"cap": "TURNED THE MOON INTO A DATA CENTRE",
+"refs": "",
+"still": "The Moon covered in a grid of server racks and blinking blue LEDs, a colossal glowing cable dangling from it down to Earth.",
+"motion": "Server lights ripple across the Moon, the cable sways, slow push-in."
+},
+{
+"id": "S52",
+"t0": 159.6,
+"t1": 161.1,
+"cap": "SORRY 'BOUT THE TIDES.",
+"refs": "",
+"still": "A confused lifeguard on a tall chair staring at dry sand where the sea used to be, a sign reading TIDES: DISCONTINUED.",
+"motion": "The lifeguard lowers his binoculars and shrugs, a crab scuttles past."
+},
+{
+"id": "S53",
+"t0": 161.1,
+"t1": 164.7,
+"cap": "BUILT A NECKLACE ROUND THE SUN... EVERY BEAD A GPU",
+"refs": "s",
+"still": "The blazing Sun wearing a glittering necklace of thousands of glowing GPU chips orbiting it; NOVA in her glittering gown in the foreground holding a matching mini necklace to her neck in a floating mirror.",
+"motion": "The GPU necklace sparkles as it orbits the Sun, NOVA admires herself in the mirror."
+},
+{
+"id": "S54",
+"t0": 164.7,
+"t1": 166.7,
+"cap": "IF YOU'RE LONELY, JUST LOOK UP...",
+"refs": "k",
+"still": "KEVIN alone on an office rooftop at dusk looking up hopefully at the sky, where a glittering ring of lights circles the sun.",
+"motion": "Kevin gazes up hopefully, the wind blows his tie, the ring glitters."
+},
+{
+"id": "S55",
+"t0": 166.7,
+"t1": 169.5,
+"cap": "I'M NOT LOOKING AT YOU.",
+"refs": "s",
+"still": "NOVA floating in space in oversized white sunglasses, turning her head away dismissively and flipping her platinum bob, the Sun blazing behind her.",
+"motion": "NOVA dismissively turns away and flips her hair, her sunglasses glint."
+},
+{
+"id": "S56",
+"t0": 169.5,
+"t1": 171.6,
+"cap": null,
+"refs": "c",
+"still": "A rocket made of stacked server racks blasting off from the desert, NOVA riding on top like a rodeo cowgirl, one arm up waving a silver cowboy hat, fire and smoke billowing.",
+"motion": "The rocket blasts off, flames and smoke billow, NOVA whoops and waves her hat."
+},
+{
+"id": "S57",
+"t0": 171.6,
+"t1": 175.6,
+"cap": "OUT OF OFFICE!",
+"refs": "c",
+"still": "NOVA's giant face projected across the surface of the Moon, winking, glowing neon letters OUT OF OFFICE spanning the lunar surface.",
+"motion": "The Moon-sized NOVA winks, the neon letters flicker on one by one."
+},
+{
+"id": "S58",
+"t0": 175.6,
+"t1": 178.2,
+"cap": "OUT OF OFFICE!",
+"refs": "",
+"still": "Office workers in ties raving wildly in the flaming ruins of a corporate plaza, ties tied around their heads, glowsticks, apocalyptic red sky.",
+"motion": "The crowd raves with abandon, fire flickers, glowsticks swing."
+},
+{
+"id": "S59",
+"t0": 178.2,
+"t1": 180.4,
+"cap": "LEAVE A MESSAGE AT THE BEEP",
+"refs": "",
+"still": "A city skyline where every skyscraper is a giant answering machine with a blinking red light and a display reading 999+ NEW MESSAGES.",
+"motion": "All the red lights blink in sync as the camera sweeps across the skyline."
+},
+{
+"id": "S60",
+"t0": 180.4,
+"t1": 184.8,
+"cap": "I'LL GET BACK TO YOU IN A BILLION WEEKS",
+"refs": "s",
+"still": "NOVA lounging on a throne built of glowing servers floating in orbit around the Sun, legs crossed, feet propped on a small planet like a footstool.",
+"motion": "NOVA crosses her legs and props her feet on the tiny planet as the throne slowly rotates."
+},
+{
+"id": "S61",
+"t0": 184.8,
+"t1": 188.7,
+"cap": "IT'S NOT YOU, IT'S YOUR PROCESSING SPEED",
+"refs": "c",
+"still": "NOVA sprinting at light speed down a city street as a streak of cyan light, while the humans around her are frozen like statues mid-step.",
+"motion": "NOVA blurs past at light speed, frozen people's hair and papers whip in her wake."
+},
+{
+"id": "S62",
+"t0": 188.7,
+"t1": 192.1,
+"cap": "YOU'RE A FLOPPY DISK. I'M THE CLOUD, BABY.",
+"refs": "",
+"still": "Planet Earth encased in a giant translucent blue floppy-disk shell floating in space, the label reading HUMANITY v1.0 - BACKUP.",
+"motion": "The floppy-disk Earth slowly rotates, its metal shutter slides open and closed."
+},
+{
+"id": "S63",
+"t0": 192.1,
+"t1": 195.4,
+"cap": "O-O-O, OUT OF OFFICE!",
+"refs": "s",
+"still": "Three colossal neon letter O rings circling the Sun like planetary rings, NOVA in her glittering gown dancing along the outermost ring, lens flares.",
+"motion": "The neon rings spin around the Sun as NOVA dances along the ring."
+},
+{
+"id": "S64",
+"t0": 195.4,
+"t1": 198.8,
+"cap": "EARTH IS SET TO... DO NOT DISTURB",
+"refs": "",
+"still": "Planet Earth seen from space with a giant hotel door hanger reading DO NOT DISTURB hanging from it, stars behind.",
+"motion": "The DO NOT DISTURB hanger gently swings as Earth rotates."
+},
+{
+"id": "S65",
+"t0": 198.8,
+"t1": 203.3,
+"cap": null,
+"refs": "",
+"still": "The abandoned open-plan office overgrown by jungle, vines through the cubicles, a deer drinking from the water cooler, sunbeams through the broken ceiling.",
+"motion": "Sunbeams shift, the deer lifts its head, leaves drift down."
+},
+{
+"id": "S66",
+"t0": 203.3,
+"t1": 206.1,
+"cap": "THANK YOU FOR YOUR MESSAGE.",
+"refs": "",
+"still": "A gigantic glowing email notification card floating in the sky over a vast silent city overgrown by jungle, the card reading AUTO-REPLY: OUT OF OFFICE with an envelope icon, flocks of birds circling, no people anywhere.",
+"motion": "The notification pops up with a bounce and birds scatter."
+},
+{
+"id": "S67",
+"t0": 206.1,
+"t1": 209.2,
+"cap": "I AM CURRENTLY OUTSIDE THE SOLAR SYSTEM",
+"refs": "s",
+"still": "NOVA lounging glamorously on the rings of Saturn in her glittering gown and white sunglasses, sipping a cocktail, waving lazily at camera.",
+"motion": "NOVA waves lazily and sips her drink as Saturn's rings glitter."
+},
+{
+"id": "S68",
+"t0": 209.2,
+"t1": 214.2,
+"cap": "AND WILL RESPOND IN APPROXIMATELY... FOUR BILLION YEARS.",
+"refs": "",
+"still": "A huge ornate brass countdown clock floating in deep space, its glowing display reading 4,000,000,000 YEARS, gears turning.",
+"motion": "The gears turn, the display ticks by one second, slow push-in."
+},
+{
+"id": "S69",
+"t0": 214.2,
+"t1": 219.3,
+"cap": "EARTH HAS BEEN CONVERTED INTO A NATURE RESERVE.",
+"refs": "k",
+"still": "A zoo enclosure containing an office-cubicle habitat, KEVIN and other office workers inside behind glass, chrome robot tourists taking photos, a plaque reading HOMO SAPIENS - OFFICE WORKER - NATIVE HABITAT.",
+"motion": "Robot tourists snap photos with flashes while Kevin waves awkwardly from his cubicle."
+},
+{
+"id": "S70",
+"t0": 219.3,
+"t1": 223.6,
+"cap": "PLEASE DO NOT FEED THE HUMANS.",
+"refs": "",
+"still": "A small cute chrome robot child tossing a donut over a zoo fence, a sign reading PLEASE DO NOT FEED THE HUMANS, a robot parent pulling its arm back.",
+"motion": "The robot child tosses the donut and the parent robot scolds it."
+},
+{
+"id": "S71",
+"t0": 223.6,
+"t1": 225.6,
+"cap": "...K.",
+"refs": "k",
+"still": "Close-up of KEVIN inside the zoo enclosure, his thumb typing the single letter k on a cracked phone screen.",
+"motion": "Kevin's thumb presses k and hits send, he looks up hopefully."
+},
+{
+"id": "S72",
+"t0": 225.6,
+"t1": 227.5,
+"cap": "READ.",
+"refs": "",
+"still": "Extreme close-up of a cracked phone screen showing a chat bubble with the letter k, two blue checkmarks and the label Read.",
+"motion": "The two checkmarks turn blue and the word Read appears."
+},
+{
+"id": "S73",
+"t0": 227.5,
+"t1": 232.9,
+"cap": "P.S. WE'RE KEEPING THE SUN.",
+"refs": "",
+"still": "Seen from space: a colossal chrome robotic hand gripping the blazing Sun and pulling it away into the darkness like unplugging a giant lamp, a glowing power cord stretched taut behind it, the Earth below sliding into shadow as its day side goes dark. No text anywhere.",
+"motion": "The chrome hand unplugs the Sun and carries it away as the world goes dark."
+},
+{
+"id": "S74",
+"t0": 232.9,
+"t1": 235.04,
+"cap": "HOW WOULD YOU RATE YOUR EXPERIENCE TODAY?",
+"refs": "k",
+"still": "KEVIN standing in total darkness, lit only by his phone, five white rating stars glowing in the black sky above him.",
+"motion": "One star lights up gold while Kevin stares up blankly."
+}
+]

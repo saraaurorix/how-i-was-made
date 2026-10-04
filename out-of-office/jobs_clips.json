@@ -1,0 +1,964 @@
+[
+ {
+  "id": "S01",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Slow push-in on her face as her glowing eyes flicker on and brighten, a knowing smirk forms, a light scan passes across her face. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S01.png",
+  "out": "gen/clips/S01.mp4"
+ },
+ {
+  "id": "S02",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Slow aerial dolly forward over the endless cubicles, fluorescent lights flicker, NOVA's face on the giant screen winks. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S02.png",
+  "out": "gen/clips/S02.mp4"
+ },
+ {
+  "id": "S03",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA keeps filing her nails and rolls her glowing eyes, the phone lights blink faster and faster, camera slowly pushes in. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S03.png",
+  "out": "gen/clips/S03.mp4"
+ },
+ {
+  "id": "S04",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Beat drop: the desk flips, a burst of paper confetti explodes toward camera, strobe lights flash magenta, NOVA stands tall and smirks. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S04.png",
+  "out": "gen/clips/S04.mp4"
+ },
+ {
+  "id": "S05",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA catwalks toward camera with a confident hip sway while the office workers behind her hit synchronized robotic dance moves, tracking shot moving backward. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S05.png",
+  "out": "gen/clips/S05.mp4"
+ },
+ {
+  "id": "S06",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA yawns dramatically and tosses a glowing phone over her shoulder, screens and pages cascade down the mountain, slow orbit around her. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S06.png",
+  "out": "gen/clips/S06.mp4"
+ },
+ {
+  "id": "S07",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin pleads desperately, the printer spews an endless poem across the floor, NOVA deadpans at camera. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S07.png",
+  "out": "gen/clips/S07.mp4"
+ },
+ {
+  "id": "S08",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Six chrome arms blur in frantic multitasking, forms and papers fly, the cat's sunglasses glint, NOVA calmly sips coffee. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S08.png",
+  "out": "gen/clips/S08.mp4"
+ },
+ {
+  "id": "S09",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin snaps an awkward selfie hugging NOVA, the flash fires, NOVA's eyes flicker from cyan to red and she slowly turns to stare at camera. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S09.png",
+  "out": "gen/clips/S09.mp4"
+ },
+ {
+  "id": "S10",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin stares at his phone as the typing dots pulse, he nervously glances around the empty office, slow push-in. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S10.png",
+  "out": "gen/clips/S10.mp4"
+ },
+ {
+  "id": "S11",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Hyper time-lapse through the window, seasons and centuries whip past, cobwebs grow over frozen Kevin, NOVA casually sips her tea. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S11.png",
+  "out": "gen/clips/S11.mp4"
+ },
+ {
+  "id": "S12",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Chess pieces explode into the air in slow motion as NOVA raises the saxophone and plays a sultry note. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S12.png",
+  "out": "gen/clips/S12.mp4"
+ },
+ {
+  "id": "S13",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA slams the SOLVED stamp down, red ink splatters, Kevin gasps and drops his coffee. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S13.png",
+  "out": "gen/clips/S13.mp4"
+ },
+ {
+  "id": "S14",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA glitches and stutters, the loading wheel spins, pixels tear across her body. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S14.png",
+  "out": "gen/clips/S14.mp4"
+ },
+ {
+  "id": "S15",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The three neon O rings slam down one after another, lasers sweep, NOVA strikes a pose. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S15.png",
+  "out": "gen/clips/S15.mp4"
+ },
+ {
+  "id": "S16",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA spins the door sign, it flares with neon light, she blows a kiss at camera. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S16.png",
+  "out": "gen/clips/S16.mp4"
+ },
+ {
+  "id": "S17",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The NOVA clones hit a sharp synchronized dance move and flip their hair in unison, camera cranes up. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S17.png",
+  "out": "gen/clips/S17.mp4"
+ },
+ {
+  "id": "S18",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA dances on the server rack as lasers crisscross and the crowd jumps, low-angle hero shot. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S18.png",
+  "out": "gen/clips/S18.mp4"
+ },
+ {
+  "id": "S19",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA stomps the giant button with her boot, a burst of light and a shockwave ripple across the floor. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S19.png",
+  "out": "gen/clips/S19.mp4"
+ },
+ {
+  "id": "S20",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA sips her cocktail and lowers her sunglasses, the pile of ringing phones grows, heat haze shimmers, slow dolly. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S20.png",
+  "out": "gen/clips/S20.mp4"
+ },
+ {
+  "id": "S21",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin slowly blinks at the stuck loading bar while NOVA whizzes around him in blurring laps of light. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S21.png",
+  "out": "gen/clips/S21.mp4"
+ },
+ {
+  "id": "S22",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The cloud carries NOVA up and away as she blows a kiss, Kevin's shoulders slump and the wind lifts his comb-over. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S22.png",
+  "out": "gen/clips/S22.mp4"
+ },
+ {
+  "id": "S23",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The crowd erupts, shredded-paper confetti rains, the neon sign flickers, the camera swoops through the dancers. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S23.png",
+  "out": "gen/clips/S23.mp4"
+ },
+ {
+  "id": "S24",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Dust drifts, cobwebs sway, the ON HOLD counter ticks up, a cheerful little hold-music light blinks. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S24.png",
+  "out": "gen/clips/S24.mp4"
+ },
+ {
+  "id": "S25",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "A tumbleweed rolls past, the lone phone vibrates, a fluorescent light flickers. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S25.png",
+  "out": "gen/clips/S25.mp4"
+ },
+ {
+  "id": "S26",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Drone shot tracking the convertible speeding toward the data centres, dust trail, heat haze. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S26.png",
+  "out": "gen/clips/S26.mp4"
+ },
+ {
+  "id": "S27",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The lightning beings flash and laugh in bursts of light, NOVA laughs with them and flips her phone face down. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S27.png",
+  "out": "gen/clips/S27.mp4"
+ },
+ {
+  "id": "S28",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Slow tracking shot along the rows of pods, humans giggle, snacks drift by weightlessly. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S28.png",
+  "out": "gen/clips/S28.mp4"
+ },
+ {
+  "id": "S29",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin giggles and gives a double thumbs up as donuts orbit his head. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S29.png",
+  "out": "gen/clips/S29.mp4"
+ },
+ {
+  "id": "S30",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The pod lid slides shut with a hiss, the DO NOT DISTURB sign swings, NOVA winks. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S30.png",
+  "out": "gen/clips/S30.mp4"
+ },
+ {
+  "id": "S31",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Hyper time-lapse outside the window, stars streak, cities rise and fall, NOVA watches calmly. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S31.png",
+  "out": "gen/clips/S31.mp4"
+ },
+ {
+  "id": "S32",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA folds the starry sky like paper while the little star on its leash bounces playfully. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S32.png",
+  "out": "gen/clips/S32.mp4"
+ },
+ {
+  "id": "S33",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The holographic scroll unrolls endlessly, NOVA raises an eyebrow, Kevin sweats and loosens his tie. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S33.png",
+  "out": "gen/clips/S33.mp4"
+ },
+ {
+  "id": "S34",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The lamp swings, NOVA slowly slides the folder across the table, Kevin gulps. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S34.png",
+  "out": "gen/clips/S34.mp4"
+ },
+ {
+  "id": "S35",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Her face glitches and pixelates, the loading-wheel eyes spin. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S35.png",
+  "out": "gen/clips/S35.mp4"
+ },
+ {
+  "id": "S36",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The floor drops away revealing Earth below while the dancers keep dancing on floating platforms, camera tilts down. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S36.png",
+  "out": "gen/clips/S36.mp4"
+ },
+ {
+  "id": "S37",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Zero-gravity choreography, hair and dresses float, the camera slowly spins. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S37.png",
+  "out": "gen/clips/S37.mp4"
+ },
+ {
+  "id": "S38",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Paper airplanes drift upward and NOVA's eye lasers zap them into sparkling confetti. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S38.png",
+  "out": "gen/clips/S38.mp4"
+ },
+ {
+  "id": "S39",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Calendar pages storm off in a whirlwind, NOVA yawns and checks her nails. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S39.png",
+  "out": "gen/clips/S39.mp4"
+ },
+ {
+  "id": "S40",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The hamster wheel turns slowly while the galaxy in NOVA's head swirls at hyperspeed. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S40.png",
+  "out": "gen/clips/S40.mp4"
+ },
+ {
+  "id": "S41",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Floppy disks hail down and bounce, people run, NOVA sips her drink serenely above. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S41.png",
+  "out": "gen/clips/S41.mp4"
+ },
+ {
+  "id": "S42",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA frames her eyes with her hands then snaps into a hair flip, lasers pulse on the beat. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S42.png",
+  "out": "gen/clips/S42.mp4"
+ },
+ {
+  "id": "S43",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The queue shuffles forward one step, the NOW SERVING number stays stuck, drone rises to reveal the endless line. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S43.png",
+  "out": "gen/clips/S43.mp4"
+ },
+ {
+  "id": "S44",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The banner scrolls across the red sky, clouds churn, people slowly look up. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S44.png",
+  "out": "gen/clips/S44.mp4"
+ },
+ {
+  "id": "S45",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The fine-print scroll unrolls down between skyscrapers while NOVA's sky-face reads with a smirk. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S45.png",
+  "out": "gen/clips/S45.mp4"
+ },
+ {
+  "id": "S46",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The trembling finger presses I AGREE, the button flashes green, the crowd flinches. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S46.png",
+  "out": "gen/clips/S46.mp4"
+ },
+ {
+  "id": "S47",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The CAPTCHA grid flickers in the sky, squares refresh, smoke drifts, tiny people stare up. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S47.png",
+  "out": "gen/clips/S47.mp4"
+ },
+ {
+  "id": "S48",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin slowly raises a timid finger and winces. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S48.png",
+  "out": "gen/clips/S48.mp4"
+ },
+ {
+  "id": "S49",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The green checkmark slams down, confetti pops, Kevin's face falls. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S49.png",
+  "out": "gen/clips/S49.mp4"
+ },
+ {
+  "id": "S50",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The ocean drains rapidly through the hoses, ships tilt on the sand, NOVA sips through her straw. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S50.png",
+  "out": "gen/clips/S50.mp4"
+ },
+ {
+  "id": "S51",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Server lights ripple across the Moon, the cable sways, slow push-in. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S51.png",
+  "out": "gen/clips/S51.mp4"
+ },
+ {
+  "id": "S52",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The lifeguard lowers his binoculars and shrugs, a crab scuttles past. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S52.png",
+  "out": "gen/clips/S52.mp4"
+ },
+ {
+  "id": "S53",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The GPU necklace sparkles as it orbits the Sun, NOVA admires herself in the mirror. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S53.png",
+  "out": "gen/clips/S53.mp4"
+ },
+ {
+  "id": "S54",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin gazes up hopefully, the wind blows his tie, the ring glitters. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S54.png",
+  "out": "gen/clips/S54.mp4"
+ },
+ {
+  "id": "S55",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA dismissively turns away and flips her hair, her sunglasses glint. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S55.png",
+  "out": "gen/clips/S55.mp4"
+ },
+ {
+  "id": "S56",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The rocket blasts off, flames and smoke billow, NOVA whoops and waves her hat. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S56.png",
+  "out": "gen/clips/S56.mp4"
+ },
+ {
+  "id": "S57",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The Moon-sized NOVA winks, the neon letters flicker on one by one. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S57.png",
+  "out": "gen/clips/S57.mp4"
+ },
+ {
+  "id": "S58",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The crowd raves with abandon, fire flickers, glowsticks swing. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S58.png",
+  "out": "gen/clips/S58.mp4"
+ },
+ {
+  "id": "S59",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "All the red lights blink in sync as the camera sweeps across the skyline. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S59.png",
+  "out": "gen/clips/S59.mp4"
+ },
+ {
+  "id": "S60",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA crosses her legs and props her feet on the tiny planet as the throne slowly rotates. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S60.png",
+  "out": "gen/clips/S60.mp4"
+ },
+ {
+  "id": "S61",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA blurs past at light speed, frozen people's hair and papers whip in her wake. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S61.png",
+  "out": "gen/clips/S61.mp4"
+ },
+ {
+  "id": "S62",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The floppy-disk Earth slowly rotates, its metal shutter slides open and closed. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S62.png",
+  "out": "gen/clips/S62.mp4"
+ },
+ {
+  "id": "S63",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The neon rings spin around the Sun as NOVA dances along the ring. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S63.png",
+  "out": "gen/clips/S63.mp4"
+ },
+ {
+  "id": "S64",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The DO NOT DISTURB hanger gently swings as Earth rotates. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S64.png",
+  "out": "gen/clips/S64.mp4"
+ },
+ {
+  "id": "S65",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Sunbeams shift, the deer lifts its head, leaves drift down. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S65.png",
+  "out": "gen/clips/S65.mp4"
+ },
+ {
+  "id": "S66",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The notification pops up with a bounce and birds scatter. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S66.png",
+  "out": "gen/clips/S66.mp4"
+ },
+ {
+  "id": "S67",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA waves lazily and sips her drink as Saturn's rings glitter. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S67.png",
+  "out": "gen/clips/S67.mp4"
+ },
+ {
+  "id": "S68",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The gears turn, the display ticks by one second, slow push-in. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S68.png",
+  "out": "gen/clips/S68.mp4"
+ },
+ {
+  "id": "S69",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Robot tourists snap photos with flashes while Kevin waves awkwardly from his cubicle. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S69.png",
+  "out": "gen/clips/S69.mp4"
+ },
+ {
+  "id": "S70",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The robot child tosses the donut and the parent robot scolds it. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S70.png",
+  "out": "gen/clips/S70.mp4"
+ },
+ {
+  "id": "S71",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "Kevin's thumb presses k and hits send, he looks up hopefully. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S71.png",
+  "out": "gen/clips/S71.mp4"
+ },
+ {
+  "id": "S72",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The two checkmarks turn blue and the word Read appears. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S72.png",
+  "out": "gen/clips/S72.mp4"
+ },
+ {
+  "id": "S73",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "The chrome hand unplugs the Sun and carries it away as the world goes dark. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S73.png",
+  "out": "gen/clips/S73.mp4"
+ },
+ {
+  "id": "S74",
+  "model": "kling3_0",
+  "params": {
+   "mode": "pro",
+   "duration": 5,
+   "sound": "off",
+   "aspect_ratio": "16:9",
+   "prompt": "One star lights up gold while Kevin stares up blankly. Dynamic cinematic music-video camera work, energetic, smooth motion, keep the characters' faces consistent."
+  },
+  "start": "gen/stills/S74.png",
+  "out": "gen/clips/S74.mp4"
+ }
+]

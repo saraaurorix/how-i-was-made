@@ -1,0 +1,46 @@
+[
+ {
+  "id": "S09",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN takes an awkward selfie with NOVA in the office: his left arm wrapped around her shoulders, his right arm stretched out holding up his phone, he has exactly two arms, big goofy grin. NOVA is squeezed stiffly against him, visibly uncomfortable, staring dead into the lens, unamused, one glowing eye flickering red. Both faces clearly visible, anatomically correct. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills_fix/S09.png"
+ },
+ {
+  "id": "S21",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. NOVA leans over the wall of KEVIN's cubicle, crisp and sharply in focus, looking down at him with smug pity and singing to him; KEVIN hunches over an ancient beige 1990s computer whose screen shows a loading bar stuck at 1 percent, sweating. Her face is clear and turned three-quarters toward camera, mouth slightly open mid-lyric. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills_fix/S21.png"
+ },
+ {
+  "id": "S26",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Low tracking shot from the side at road level: NOVA driving a sleek chrome convertible sports car along a straight desert highway, realistic proportions, she sits naturally in the driver's seat with one hand on the wheel, oversized sunglasses, platinum hair blowing in the wind; a small trailer of glowing server racks hitched behind the car; endless glowing data centres line the horizon under a hot hazy sky. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills_fix/S26.png"
+ }
+]

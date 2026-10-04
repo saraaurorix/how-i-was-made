@@ -1,0 +1,20 @@
+# media you make: pictures, clips, audio, builds
+gen/
+build/
+build_reel/
+sep/
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+# caches the job runners write beside themselves
+uploads*.json
+fal_uploads.json
+gen_log.jsonl
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# your own fonts, if you add them
+fonts/

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "S24",
+  "model": "veo3_1",
+  "params": {
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Locked-off static camera, absolutely no camera movement. Dust motes drift slowly, cobwebs sway gently in a draft, the fluorescent light flickers faintly. The red LED display on the desk stays perfectly still and legible the whole time, clearly reading ON HOLD 9999 DAYS. No speech, no music."
+  },
+  "start": "gen/stills/S24.png",
+  "out": "gen/fix/S24.mp4"
+ },
+ {
+  "id": "S42",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "Beauty close-up of NOVA performing the chorus with big, bold, expressive diva energy: she belts \"O-O-O, out of office!\" with wide open mouth shapes on every O, eyebrows lifting, a cheeky grin between words, a playful head tilt and a wink at the end, framing her glowing eyes with her chrome fingertips as lasers pulse behind her. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image."
+  },
+  "start": "gen/stills/S42.png",
+  "audio": "lipsync/S42.wav",
+  "out": "gen/lipsync_wan/S42.mp4"
+ }
+]

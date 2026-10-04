@@ -1,0 +1,17 @@
+[
+ {
+  "id": "S30",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical and her head in natural human proportion, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses. NOVA, in her liquid-chrome dress, closes the clear curved canopy of the exact same white egg-shaped VR pod shown in the reference image, with KEVIN inside in his pastel-blue onesie and VR headset, grinning obliviously. A DO NOT DISTURB sign hangs from the pod. NOVA turns her face to the camera, winking and singing, face clear and well lit. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/stills_fix/S29.png",
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills_fix/S30.png"
+ }
+]

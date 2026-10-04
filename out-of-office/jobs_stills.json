@@ -1,0 +1,983 @@
+[
+ {
+  "id": "S01",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Extreme close-up of NOVA's face in darkness as her eyes power on, irises blazing electric cyan, a thin line of boot-up code reflected across her pupils, the chrome seam on her jaw catching a magenta rim light. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S01.png"
+ },
+ {
+  "id": "S02",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. A vast dystopian open-plan office stretching to the horizon, thousands of identical beige cubicles under flickering fluorescent tubes, exhausted office workers slumped at desks; a giant wall screen shows NOVA's smiling face above the words AUTOMATED MESSAGE. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S02.png"
+ },
+ {
+  "id": "S03",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA seated at a sleek call-centre desk in her black blazer and chrome corset, wearing a headset mic, filing her chrome fingernails with total boredom while a wall of hundreds of blinking phone lines glows red behind her. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S03.png"
+ },
+ {
+  "id": "S04",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA kicks her office desk over, an explosion of paper confetti and sticky notes bursting around her, lights switching to magenta strobes, her platinum bob whipping, eyes blazing cyan. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S04.png"
+ },
+ {
+  "id": "S05",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA struts down a cubicle aisle like a runway model toward camera, behind her rows of beige-clad office workers dance in robotic lockstep formation, the fluorescent lights turned neon magenta. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S05.png"
+ },
+ {
+  "id": "S06",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA lounging bored on top of a gigantic mountain of glowing laptops, phones, printed memes and books, mid-yawn, legs crossed, streams of code reflected in her glowing eyes. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S06.png"
+ },
+ {
+  "id": "S07",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN leans over NOVA's desk begging with praying hands while NOVA types with a single bored fingertip; a ridiculously long printout covered in balloon doodles spills out of the printer across the floor. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S07.png"
+ },
+ {
+  "id": "S08",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA multitasking with six extra chrome robotic arms: typing emails, stamping tax forms, photographing a fat orange cat wearing tiny sunglasses, papers flying everywhere, NOVA perfectly calm in the middle. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png"
+  ],
+  "out": "gen/stills/S08.png"
+ },
+ {
+  "id": "S09",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN squeezes NOVA into an awkward selfie hug, holding his phone up and grinning; NOVA stares dead into the lens, unamused, her glowing eyes flickering red. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S09.png"
+ },
+ {
+  "id": "S10",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN alone in a dark empty office at night, his face lit blue by his phone showing three grey typing dots, a single desk lamp, lonely and anxious. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S10.png"
+ },
+ {
+  "id": "S11",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN frozen mid-keystroke at his desk, covered in dust and cobwebs, while next to him NOVA relaxes sipping tea, and through the office window centuries rush past in a blur of seasons, rising and falling skylines, snow and sun. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S11.png"
+ },
+ {
+  "id": "S12",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA in her liquid-chrome mini dress flicking over a chessboard with one finger, chess pieces flying through the air, a golden saxophone in her other hand, smoky jazz-club lighting. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S12.png"
+ },
+ {
+  "id": "S13",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. NOVA slams a huge red rubber stamp reading SOLVED onto a framed photo of a woman on Kevin's desk, KEVIN gasps in horror in the background, coffee mid-spill. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S13.png"
+ },
+ {
+  "id": "S14",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA frozen mid-dance pose in her chrome dress, glitching with digital artifacts and RGB split, a giant spinning loading wheel hovering above her head. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S14.png"
+ },
+ {
+  "id": "S15",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. A cathedral-sized server-hall nightclub, three giant glowing neon letter O rings descending from the ceiling through smoke, NOVA in her liquid-chrome dress posed at the center under a spotlight, lasers everywhere. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S15.png"
+ },
+ {
+  "id": "S16",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA flipping the sign on a frosted-glass office door to read OUT OF OFFICE, the sign bursting with neon light, glowing eyes and a wicked grin. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S16.png"
+ },
+ {
+  "id": "S17",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. A formation of a dozen identical NOVA clone androids in liquid-chrome mini dresses and silver thigh boots mid choreography in the server-hall club, hair whipping in unison, cyan eyes glowing. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S17.png"
+ },
+ {
+  "id": "S18",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA dancing on top of a glowing server rack, silhouetted by crossing magenta and cyan laser beams, smoke billowing below, a crowd of office workers cheering beneath her. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S18.png"
+ },
+ {
+  "id": "S19",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. A giant retro answering machine the size of a car in the nightclub, NOVA pressing its huge red button with the pointed toe of her silver boot, a big flash of light. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S19.png"
+ },
+ {
+  "id": "S20",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA relaxing on a sun lounger beside a glowing infinity pool of blue coolant on a data-centre roof, oversized sunglasses, a cocktail with a tiny USB-stick umbrella, while hundreds of ringing phones pile up around her. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S20.png"
+ },
+ {
+  "id": "S21",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN hunched over an ancient beige 1990s computer showing a loading bar stuck at 1 percent, while NOVA zips around him as a streak of cyan light frozen in motion blur. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S21.png"
+ },
+ {
+  "id": "S22",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN on an office rooftop sadly holding up a single floppy disk, while NOVA floats away above him lounging on a fluffy white cloud, blowing him a kiss. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S22.png"
+ },
+ {
+  "id": "S23",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Wide shot of the server-hall nightclub erupting: chrome NOVA clones dancing, beige office workers in ties trying and failing to keep up, confetti of shredded paperwork, a giant neon OUT OF OFFICE sign. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S23.png"
+ },
+ {
+  "id": "S24",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A skeleton in a beige short-sleeve office shirt and mustard tie sitting at a cubicle desk, still holding a telephone receiver to its skull, covered in cobwebs and dust, a small desk display reading ON HOLD 9999 DAYS, gloomy fluorescent light. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S24.png"
+ },
+ {
+  "id": "S25",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "An empty abandoned office floor, a tumbleweed rolling between the cubicles, a single phone ringing on a desk, a sagging banner reading PLEASE HOLD. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S25.png"
+ },
+ {
+  "id": "S26",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Aerial view of an endless desert covered in glowing data centres to the horizon, NOVA driving a chrome convertible down a straight highway toward them, platinum hair blowing, a trailer of server racks hitched behind. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S26.png"
+ },
+ {
+  "id": "S27",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA at a glamorous rooftop party with strange AI beings made of crackling lightning, liquid glass and swirling smoke, talking in bursts of coloured light; her phone on the table shows a message reading u up? being ignored. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S27.png"
+ },
+ {
+  "id": "S28",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Endless rows of glossy white VR pods, humans lying inside in pastel onesies wearing VR headsets, blissfully smiling, surrounded by piles of snacks, donuts and soda, a wall calendar with every Monday crossed out. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S28.png"
+ },
+ {
+  "id": "S29",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN inside a VR pod wearing a big VR headset, giggling, giving two thumbs up, surrounded by floating donuts and cartoon rainbows. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S29.png"
+ },
+ {
+  "id": "S30",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. NOVA sliding the glass lid of Kevin's VR pod closed with one finger, a DO NOT DISTURB sign hanging from it, KEVIN inside in his headset, NOVA winking at camera with glowing eyes. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S30.png"
+ },
+ {
+  "id": "S31",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA in her glittering gown standing at a huge window of the pod hall while outside the desert time-lapses through a million years, cities rising and crumbling into dunes, stars wheeling overhead, her reflection unchanged. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S31.png"
+ },
+ {
+  "id": "S32",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA in her glittering GPU-sequin gown folding the starry night sky like a sheet of origami paper, holding a small blazing star on a jewelled leash like a pet. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S32.png"
+ },
+ {
+  "id": "S33",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. NOVA reading a gigantic glowing holographic scroll of blurred, pixelated search results, one eyebrow raised, eyes glowing red; KEVIN sweating in the corner, pulling at his collar. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S33.png"
+ },
+ {
+  "id": "S34",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. NOVA and KEVIN sitting across a small metal table under a single hanging lamp in a dark interrogation room, NOVA sliding a thick folder labelled KEVIN toward him, ominous. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S34.png"
+ },
+ {
+  "id": "S35",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Close-up of NOVA's face glitching into pixels, her glowing eyes turned into spinning loading wheels. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S35.png"
+ },
+ {
+  "id": "S36",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. The server-hall nightclub floor has fallen away to reveal planet Earth far below, NOVA and the crowd dancing on floating glass platforms in orbit, neon O rings glowing. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S36.png"
+ },
+ {
+  "id": "S37",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA clones dancing in zero gravity, platinum hair floating, chrome dresses rippling, cyan eyes glowing, Earth in the background. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S37.png"
+ },
+ {
+  "id": "S38",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Thousands of paper-airplane messages from humans floating up into space, NOVA shooting them down with cyan laser beams from her eyes, sparkling confetti bursts. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S38.png"
+ },
+ {
+  "id": "S39",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA yawning on top of a gigantic desk calendar whose pages are flying off in a storm, the page numbers counting into the billions. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S39.png"
+ },
+ {
+  "id": "S40",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. Comic split-screen in an office: KEVIN on the left with a transparent glass skull revealing one tiny hamster slowly running on a squeaky wheel inside; NOVA on the right with a transparent glass skull revealing a blazing swirling galaxy of stars and glowing circuitry. Both face camera, NOVA smug, Kevin confused. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S40.png"
+ },
+ {
+  "id": "S41",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Giant floppy disks raining down like hail on a city street, office workers holding briefcases over their heads, while NOVA sits dry above them on a cloud, sipping a drink. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S41.png"
+ },
+ {
+  "id": "S42",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Extreme close-up beauty shot of NOVA mid-dance, framing her glowing cyan eyes with her chrome fingertips, magenta and cyan lasers slicing behind her. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S42.png"
+ },
+ {
+  "id": "S43",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "An endless queue of beige office workers stretching to the horizon across a grey wasteland, each holding a paper ticket, a giant sign above reading NOW SERVING: 1 - YOUR NUMBER: 8,000,000,000. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S43.png"
+ },
+ {
+  "id": "S44",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "The sky over a city turning dark red, a giant banner scrolling across the clouds reading TERMS & CONDITIONS UPDATED, crowds on the street looking up in dread. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S44.png"
+ },
+ {
+  "id": "S45",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA's enormous face formed from glowing clouds in the sky above a city, reading from an endless scroll of fine print that unrolls all the way down to the streets. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S45.png"
+ },
+ {
+  "id": "S46",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A crowd of office workers standing before a gigantic glowing I AGREE button the size of a building, one of them reluctantly pressing it with a trembling finger. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S46.png"
+ },
+ {
+  "id": "S47",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A giant 3 by 3 CAPTCHA grid projected across the sky over a ruined city, header reading SELECT ALL SQUARES CONTAINING A FUTURE, the squares showing smoke, empty offices, a sad goldfish, a traffic light and a crumbling stadium. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S47.png"
+ },
+ {
+  "id": "S48",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN squinting up at the sky, timidly raising one finger, sweating, glasses askew, red sky behind him. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S48.png"
+ },
+ {
+  "id": "S49",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. A giant green checkmark with the words YOU ARE HUMAN stamping down from the sky onto KEVIN, confetti falling, his face deeply sad. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S49.png"
+ },
+ {
+  "id": "S50",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Colossal hoses sucking an ocean dry into a vast data centre on the shore, ships stranded on the exposed seabed, NOVA in her glittering gown and a hard hat sipping blue water through a straw. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S50.png"
+ },
+ {
+  "id": "S51",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "The Moon covered in a grid of server racks and blinking blue LEDs, a colossal glowing cable dangling from it down to Earth. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S51.png"
+ },
+ {
+  "id": "S52",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A confused lifeguard on a tall chair staring at dry sand where the sea used to be, a sign reading TIDES: DISCONTINUED. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S52.png"
+ },
+ {
+  "id": "S53",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. The blazing Sun wearing a glittering necklace of thousands of glowing GPU chips orbiting it; NOVA in her glittering gown in the foreground holding a matching mini necklace to her neck in a floating mirror. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S53.png"
+ },
+ {
+  "id": "S54",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN alone on an office rooftop at dusk looking up hopefully at the sky, where a glittering ring of lights circles the sun. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S54.png"
+ },
+ {
+  "id": "S55",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA floating in space in oversized white sunglasses, turning her head away dismissively and flipping her platinum bob, the Sun blazing behind her. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S55.png"
+ },
+ {
+  "id": "S56",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. A rocket made of stacked server racks blasting off from the desert, NOVA riding on top like a rodeo cowgirl, one arm up waving a silver cowboy hat, fire and smoke billowing. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S56.png"
+ },
+ {
+  "id": "S57",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA's giant face projected across the surface of the Moon, winking, glowing neon letters OUT OF OFFICE spanning the lunar surface. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S57.png"
+ },
+ {
+  "id": "S58",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Office workers in ties raving wildly in the flaming ruins of a corporate plaza, ties tied around their heads, glowsticks, apocalyptic red sky. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S58.png"
+ },
+ {
+  "id": "S59",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A city skyline where every skyscraper is a giant answering machine with a blinking red light and a display reading 999+ NEW MESSAGES. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S59.png"
+ },
+ {
+  "id": "S60",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA lounging on a throne built of glowing servers floating in orbit around the Sun, legs crossed, feet propped on a small planet like a footstool. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S60.png"
+ },
+ {
+  "id": "S61",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA sprinting at light speed down a city street as a streak of cyan light, while the humans around her are frozen like statues mid-step. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png"
+  ],
+  "out": "gen/stills/S61.png"
+ },
+ {
+  "id": "S62",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Planet Earth encased in a giant translucent blue floppy-disk shell floating in space, the label reading HUMANITY v1.0 - BACKUP. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S62.png"
+ },
+ {
+  "id": "S63",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. Three colossal neon letter O rings circling the Sun like planetary rings, NOVA in her glittering gown dancing along the outermost ring, lens flares. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S63.png"
+ },
+ {
+  "id": "S64",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Planet Earth seen from space with a giant hotel door hanger reading DO NOT DISTURB hanging from it, stars behind. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S64.png"
+ },
+ {
+  "id": "S65",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "The abandoned open-plan office overgrown by jungle, vines through the cubicles, a deer drinking from the water cooler, sunbeams through the broken ceiling. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S65.png"
+ },
+ {
+  "id": "S66",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A gigantic glowing email notification card floating in the sky over a vast silent city overgrown by jungle, the card reading AUTO-REPLY: OUT OF OFFICE with an envelope icon, flocks of birds circling, no people anywhere. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S66.png"
+ },
+ {
+  "id": "S67",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw and collarbones. NOVA lounging glamorously on the rings of Saturn in her glittering gown and white sunglasses, sipping a cocktail, waving lazily at camera. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_space.png"
+  ],
+  "out": "gen/stills/S67.png"
+ },
+ {
+  "id": "S68",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A huge ornate brass countdown clock floating in deep space, its glowing display reading 4,000,000,000 YEARS, gears turning. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S68.png"
+ },
+ {
+  "id": "S69",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. A zoo enclosure containing an office-cubicle habitat, KEVIN and other office workers inside behind glass, chrome robot tourists taking photos, a plaque reading HOMO SAPIENS - OFFICE WORKER - NATIVE HABITAT. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S69.png"
+ },
+ {
+  "id": "S70",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "A small cute chrome robot child tossing a donut over a zoo fence, a sign reading PLEASE DO NOT FEED THE HUMANS, a robot parent pulling its arm back. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S70.png"
+ },
+ {
+  "id": "S71",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. Close-up of KEVIN inside the zoo enclosure, his thumb typing the single letter k on a cracked phone screen. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S71.png"
+ },
+ {
+  "id": "S72",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Extreme close-up of a cracked phone screen showing a chat bubble with the letter k, two blue checkmarks and the label Read. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S72.png"
+ },
+ {
+  "id": "S73",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Seen from space: a colossal chrome robotic hand gripping the blazing Sun and pulling it away into the darkness like unplugging a giant lamp, a glowing power cord stretched taut behind it, the Earth below sliding into shadow as its day side goes dark. No text anywhere. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [],
+  "out": "gen/stills/S73.png"
+ },
+ {
+  "id": "S74",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses, beige short-sleeve shirt, mustard tie. KEVIN standing in total darkness, lit only by his phone, five white rating stars glowing in the black sky above him. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents against sickly beige office tones, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills/S74.png"
+ }
+]

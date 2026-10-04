@@ -1,0 +1,13 @@
+# Tested with Python 3.12 on macOS (Apple Silicon). ffmpeg comes with imageio-ffmpeg.
+pillow>=10.1
+numpy>=1.26
+imageio-ffmpeg>=0.5
+opencv-python>=4.9
+scipy>=1.11
+librosa>=0.10
+soundfile>=0.12
+faster-whisper>=1.0
+av>=12,<19                 # faster-whisper 1.2.1 fails to open audio with PyAV 19
+mediapipe>=0.10.14,<1.0   # tested on 0.10.35; 1.0.1 aborted inside the face-landmark call on macOS
+fonttools>=4.50
+fal-client>=0.5

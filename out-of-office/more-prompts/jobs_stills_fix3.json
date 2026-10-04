@@ -1,0 +1,46 @@
+[
+ {
+  "id": "S40",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical and her head in natural human proportion, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses. Medium shot in the office: NOVA and KEVIN stand side by side facing the camera, both with normal realistic head proportions. Above Kevin's head floats a small flickering hologram of a tiny hamster running on a wheel labelled 1 HAMSTER; above NOVA's head floats a large glowing hologram of a swirling galaxy. NOVA, in her black blazer and chrome corset, sings to camera with a smug grin while patting Kevin's head; Kevin looks up at his hamster, baffled. NOVA's face is clear and well lit, mouth open mid-lyric. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_office.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills_fix/S40.png"
+ },
+ {
+  "id": "S46",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical and her head in natural human proportion, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw. KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses. A colossal 60-metre holographic NOVA towers over a grand city plaza like a glamorous benevolent tyrant, her glowing face, platinum bob and shoulders filling the upper half of the frame, looking down and speaking to the crowd with regal amusement. Below, a line of distinctive characters stands before a giant glowing I AGREE button: KEVIN at the front in his mustard tie reluctantly pressing it, an elderly woman in hair curlers and a dressing gown, a barista clutching a latte, a man in a bathrobe and slippers, a punk teenager with a green mohawk, a nun, and a sweaty bodybuilder. Dusk, red sky, searchlights. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_club.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills_fix/S46.png"
+ },
+ {
+  "id": "S29",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "KEVIN is the man from the reference image: keep him identical, balding comb-over, thick mustache, round wire glasses. KEVIN, now wearing a pastel-blue onesie, sits inside the exact same glossy white egg-shaped VR pod as in the first reference image, in the same row of pods, wearing a VR headset, giggling with joy and giving two thumbs up, surrounded by floating donuts and little cartoon rainbows. Same pod design, same room, same lighting as the reference. Cinematic music-video still, glossy high-fashion dystopian corporate satire, saturated neon magenta and electric cyan accents, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/stills/S28.png",
+   "gen/char/kevin.png"
+  ],
+  "out": "gen/stills_fix/S29.png"
+ }
+]

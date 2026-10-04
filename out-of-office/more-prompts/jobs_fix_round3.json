@@ -1,0 +1,52 @@
+[
+ {
+  "id": "S30",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA slides the clear canopy of the white VR pod shut over the grinning man in the onesie, then turns to the camera, winks and sings \"I know. Don't come back.\" with a sassy smile; the DO NOT DISTURB sign swings. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image, expressive and playful."
+  },
+  "start": "gen/stills_fix/S30.png",
+  "audio": "lipsync/S30.wav",
+  "out": "gen/lipsync_wan/S30.mp4"
+ },
+ {
+  "id": "S40",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "NOVA pats the baffled man's head and sings to the camera with a smug, teasing grin \"It's not you, it's your processing speed\"; the tiny hologram hamster above his head runs slowly while the galaxy above her head swirls fast. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image, expressive and playful."
+  },
+  "start": "gen/stills_fix/S40.png",
+  "audio": "lipsync/S40.wav",
+  "out": "gen/lipsync_wan/S40.mp4"
+ },
+ {
+  "id": "S46",
+  "model": "wan2_7",
+  "params": {
+   "resolution": "1080p",
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "The colossal holographic NOVA looms over the plaza and announces down to the crowd with regal, amused authority \"By continuing to exist, you agree.\"; the man at the front reluctantly presses the glowing I AGREE button, the crowd flinches, searchlights sweep. Her lips move in perfect sync with the reference audio. Keep her face exactly as in the image, expressive and playful."
+  },
+  "start": "gen/stills_fix/S46.png",
+  "audio": "lipsync/S46.wav",
+  "out": "gen/lipsync_wan/S46.mp4"
+ },
+ {
+  "id": "S29",
+  "model": "veo3_1",
+  "params": {
+   "duration": 4,
+   "aspect_ratio": "16:9",
+   "prompt": "The man in the pastel onesie inside the white VR pod giggles with pure joy and gives an enthusiastic double thumbs up, donuts and little rainbows float around him. Static camera with a gentle push-in. No speech, no music."
+  },
+  "start": "gen/stills_fix/S29.png",
+  "out": "gen/fix/S29.mp4"
+ }
+]

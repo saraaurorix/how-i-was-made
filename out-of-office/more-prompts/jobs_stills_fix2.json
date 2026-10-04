@@ -1,0 +1,29 @@
+[
+ {
+  "id": "S09",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "Edit the provided image and keep everything else exactly the same: same people, same faces, same outfits, same office, same lighting, same framing. Fix only the man's arms so that he has exactly two arms: his left arm is wrapped around the woman's shoulders and his right arm is raised holding the phone for the selfie. Remove any extra arm or hand. The woman stays stiff and uncomfortable, staring into the lens."
+  },
+  "refs": [
+   "gen/stills/S09.png"
+  ],
+  "out": "gen/stills_fix/S09.png"
+ },
+ {
+  "id": "S70",
+  "model": "nano_banana_pro",
+  "params": {
+   "aspect_ratio": "16:9",
+   "resolution": "2k",
+   "prompt": "NOVA is the female android from the reference images: keep her face identical, platinum-silver blunt bob with a sharp fringe, glowing electric-cyan eyes, fine chrome seams on her jaw. NOVA wears the khaki safari outfit and pith helmet from the reference image and is leading a zoo tour, walking backwards facing the camera, holding a small tour-guide flag, speaking to a group of chrome robot tourists behind her. Beside the path, a small cute chrome robot child is mid-throw tossing a donut over a chain-link fence into an enclosure where beige office workers sit in cubicles. A neon sign on the fence reads PLEASE DO NOT FEED THE HUMANS. NOVA's face is clear and turned to camera, mouth slightly open mid-sentence. Cinematic music-video still, glossy high-fashion dystopian satire, saturated neon magenta and electric cyan accents, anamorphic lens flare, shallow depth of field, crisp hyperreal detail, no captions, no watermark."
+  },
+  "refs": [
+   "gen/char/nova_portrait.png",
+   "gen/char/nova_safari.png"
+  ],
+  "out": "gen/stills_fix/S70.png"
+ }
+]
